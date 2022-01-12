@@ -6,6 +6,7 @@ import { NavbarComponent } from './core/components/navbar/navbar.component';
 import { FooterComponent } from './core/components/footer/footer.component';
 import { MainPageComponent } from './core/components/main-page/main-page.component';
 import { HeaderModule } from './core/components/headers/headers.module';
+import { AboutComponent } from './core/components/about/about.component';
 
 
 
@@ -16,6 +17,7 @@ import { HeaderModule } from './core/components/headers/headers.module';
     NavbarComponent,
     FooterComponent,
     MainPageComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
