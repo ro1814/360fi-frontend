@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const HomeScreen = () => {
+export const MeetTheTeamScreen = () => {
     return (
         <div>
             
