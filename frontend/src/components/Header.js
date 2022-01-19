@@ -11,9 +11,9 @@ function Header() {
   };
 
   return (
-    <HeaderWrapper>
+    <HeaderWrapper >
       <Navbar open={open} />
-      <MenuButton open={open} handleClick={handleClick} />
+      <MenuButton open={open} handleClick={handleClick}  />
     </HeaderWrapper>
   );
 }
