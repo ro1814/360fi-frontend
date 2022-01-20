@@ -11,11 +11,11 @@ Heading,
 const Footer = () => {
 return (
 	<Box>
-	<h1 style={{ color: "black",
+	{/* <h1 style={{ color: "black",
 				textAlign: "center",
 				marginTop: "-50px" }}>
 		360
-	</h1>
+	</h1> */}
 	<Container>
 		<Row>
 		<Column>

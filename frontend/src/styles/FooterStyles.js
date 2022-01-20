@@ -8,12 +8,13 @@ bottom: 0;
 width: 100%;
 
 
-@media (max-width: 1000px) {
+@media (max-width: 624px) {
 	padding: 70px 30px;
 	position: static;
-	width: 100%;
-	bottom: 0;
+	width: auto;
+	//bottom: 0;
 	min-height: 100vh;
+	
 }
 `;
 
@@ -23,7 +24,7 @@ export const Container = styled.div`
 	justify-content: center;
 	max-width: 1000px;
 	margin: 0 auto;
-	/* background: red; */
+	background: red;
 `
 
 export const Column = styled.div`
