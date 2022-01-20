@@ -11,11 +11,12 @@ const MenuButtonWrapper = styled.button`
   @media only screen and (min-width: 624px) {
     display: none;
   }
+  
 `;
 
-function MenuButton({ open, handleClick }) {
+function MenuButton({ open, handleClick, handleClickClose }) {
   return !open ? (
-    <MenuButtonWrapper onClick={handleClick}>
+    <MenuButtonWrapper onClick={handleClick} >
       <svg viewBox="0 0 100 80" width="30" height="30" fill="#000000">
         <rect width="90" height="10" />
         <rect y="30" width="90" height="10" />
@@ -23,7 +24,8 @@ function MenuButton({ open, handleClick }) {
       </svg>
     </MenuButtonWrapper>
   ) : (
-    <MenuButtonWrapper onClick={handleClick}>
+    <MenuButtonWrapper onClick={handleClickClose}>
+      
       <svg
         className="svg-icon"
         width="30"

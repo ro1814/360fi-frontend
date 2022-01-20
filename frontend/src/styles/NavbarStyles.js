@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const NavbarWrapper = styled.nav`
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -12,6 +13,8 @@ export const NavbarWrapper = styled.nav`
   width: 100%;
   height: 100%;
   transition: right 0.3s linear;
+  
+  
 
 
   @media only screen and (min-width: 624px) {
@@ -20,6 +23,8 @@ export const NavbarWrapper = styled.nav`
     height: auto;
     justify-content: space-evenly;
     background: transparent;
+
+    transition: all 0.3s ease;
     
   }
 
