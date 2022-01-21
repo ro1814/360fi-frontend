@@ -1,11 +1,14 @@
 import React from "react";
 import { NavbarWrapper } from "../../styles/NavbarStyles";
+import { Link } from 'react-router-dom'
+
+
 
 function Navbar({ open }) {
   return (
-    <NavbarWrapper open={open}>
+    <NavbarWrapper open={open}  >
       <div className="contProducts">
-      <a href='#'>Products and Services</a>
+      <Link to='/products'>Products and Services</Link>
       </div>
       <div className="contInsights">
       <a href='#'>Insights</a>
