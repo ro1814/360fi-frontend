@@ -16,10 +16,12 @@ export const NavbarWrapper = styled.nav`
 
   a {
     //padding: 0.5rem 0.8rem;
+    font-weight: bold;
     color: white;
     text-decoration: none;
     font-size: 22px;
-    padding-top: 85px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     
   }
 

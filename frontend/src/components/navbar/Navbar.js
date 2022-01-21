@@ -5,7 +5,7 @@ function Navbar({ open }) {
   return (
     <NavbarWrapper open={open}>
       <div className="contProducts">
-      <a href='#'>Products and Services Overview</a>
+      <a href='#'>Products and Services</a>
       </div>
       <div className="contInsights">
       <a href='#'>Insights</a>
