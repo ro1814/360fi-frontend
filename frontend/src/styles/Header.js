@@ -7,5 +7,4 @@ export const HeaderWrapper = styled.header`
   justify-content: space-between;
   align-items: center;
   position: static;
-   
 `;

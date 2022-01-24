@@ -1,9 +1,10 @@
 import React from 'react'
 
-export const InsightsScreen = () => {
+const InsightsScreen = () => {
     return (
         <div>
             <h1>Hi, InsightsScreen here</h1>
         </div>
     )
 }
+ export default InsightsScreen

@@ -1,9 +1,10 @@
 import React from 'react'
 
-export const MeetTheTeamScreen = () => {
+const MeetTheTeamScreen = () => {
     return (
         <div>
-            
+           <h1> Hi, meet the team here. </h1>
         </div>
     )
 }
+export default MeetTheTeamScreen

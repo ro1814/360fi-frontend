@@ -7,24 +7,22 @@ function Header() {
   const [open, setOpen] = useState(false);
 
   const handleClick = () => {
-    document.body.style.overflow = "hidden"
+    document.body.style.overflow = "hidden";
     setOpen(!open);
-    
   };
   const handleClickClose = () => {
-
-    document.body.style.overflow = "visible"
+    document.body.style.overflow = "visible";
     setOpen(!open);
-    
   };
 
-
-
   return (
-    
-    <HeaderWrapper >
-      <Navbar open={open} />
-      <MenuButton open={open} handleClick={handleClick} handleClickClose={handleClickClose}/>
+    <HeaderWrapper>
+      <Navbar open={open} handleClickClose={handleClickClose} />
+      <MenuButton
+        open={open}
+        handleClick={handleClick}
+        handleClickClose={handleClickClose}
+      />
     </HeaderWrapper>
   );
 }

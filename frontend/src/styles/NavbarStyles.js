@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const NavbarWrapper = styled.nav`
-
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -12,7 +11,6 @@ export const NavbarWrapper = styled.nav`
   width: 100%;
   height: 100%;
   transition: right 0.3s linear;
-  
 
   a {
     //padding: 0.5rem 0.8rem;
@@ -22,57 +20,47 @@ export const NavbarWrapper = styled.nav`
     font-size: 22px;
     padding-top: 80px;
     padding-bottom: 80px;
-    
   }
 
   .contProducts {
-    
-    background-color: #97DBFF;
+    background-color: #97dbff;
     width: 100%;
-    height: 22.50%;
+    height: 22.5%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center; 
-    
+    text-align: center;
   }
 
   .contInsights {
-    
-    background-color: #63C9FF;
+    background-color: #63c9ff;
     width: 100%;
-    height: 22.50%;
+    height: 22.5%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center; 
-    
+    text-align: center;
   }
 
   .contMeet {
-    
-    background-color: #0082C6;
+    background-color: #0082c6;
     width: 100%;
-    height: 22.50%;
+    height: 22.5%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center; 
-    
+    text-align: center;
   }
 
   .contReg {
-    
-    background-color: #00689E;
+    background-color: #00689e;
     width: 100%;
-    height: 22.50%;
+    height: 22.5%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center; 
-    
+    text-align: center;
   }
-
 
   @media only screen and (min-width: 624px) {
     flex-direction: row;
@@ -116,7 +104,6 @@ export const NavbarWrapper = styled.nav`
       color: black;
       text-decoration: none;
       font-size: 18px;
-
     }
   }
 `;
