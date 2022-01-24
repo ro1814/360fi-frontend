@@ -4,14 +4,16 @@ import {
   Container,
   Row,
   Column,
-  FooterLink,
   Heading,
+  Paragraph,
+  Image,
 } from "../styles/FooterStyles";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <Box>
-      {/* <h1 style={{ color: "black",
+      {/* <h1 style={{ color: "white",
 				textAlign: "center",
 				marginTop: "-50px" }}>
 		360
@@ -19,47 +21,67 @@ const Footer = () => {
       <Container>
         <Row>
           <Column>
-            <Heading>About Us</Heading>
-            <FooterLink href="#">Aim</FooterLink>
-            <FooterLink href="#">Vision</FooterLink>
-            <FooterLink href="#">Testimonials</FooterLink>
+            <Image
+              src={"/logo-footer360.svg"}
+              alt="360 Fund Insight Limited "
+            ></Image>
+            <Paragraph>
+              {" "}
+              This website is for investment professionals only. It is not
+              intended for private investors. Private investors who are
+              interested in our investment services should contact a financial
+              professional.
+            </Paragraph>
           </Column>
           <Column>
-            <Heading>Services</Heading>
-            <FooterLink href="#">Writing</FooterLink>
-            <FooterLink href="#">Internships</FooterLink>
-            <FooterLink href="#">Coding</FooterLink>
-            <FooterLink href="#">Teaching</FooterLink>
+            <Heading>COMPANY</Heading>
+            <Link to="/" className="footerLink">
+              {" "}
+              Home{" "}
+            </Link>
+            <Link to="/meetus" className="footerLink">
+              About us
+            </Link>
+            <Link to="/contactus" className="footerLink">
+              Contact us
+            </Link>
           </Column>
           <Column>
-            <Heading>Contact Us</Heading>
-            <FooterLink href="#">Uttar Pradesh</FooterLink>
-            <FooterLink href="#">Ahemdabad</FooterLink>
-            <FooterLink href="#">Indore</FooterLink>
-            <FooterLink href="#">Mumbai</FooterLink>
+            <Heading>OUR SERVICES</Heading>
+            <Link to="/research" className="footerLink">
+              Research
+            </Link>
+            <Link to="/governance" className="footerLink">
+              Governance
+            </Link>
+            <Link to="/solutions" className="footerLink">
+              Solutions
+            </Link>
+          </Column>
+          <Column>
+            <Heading>LEGAL</Heading>
+            <Link to="/cookies" className="footerLink">
+              Cookies policy
+            </Link>
+            <Link to="/legalinfo" className="footerLink">
+              Legal information
+            </Link>
+            <Link to="/privacy" className="footerLink">
+              Privacy policy
+            </Link>
           </Column>
           <Column>
             <Heading>Social Media</Heading>
-            <FooterLink href="#">
+            <Link to="/facebook" className="footerLink">
               <i className="fab fa-facebook-f">
-                <span style={{ marginLeft: "10px" }}>Facebook</span>
+                <span>Twitter</span>
               </i>
-            </FooterLink>
-            <FooterLink href="#">
+            </Link>
+            <Link to="/linkedin" className="footerLink">
               <i className="fab fa-instagram">
-                <span style={{ marginLeft: "10px" }}>Instagram</span>
+                <span>LinkedIn</span>
               </i>
-            </FooterLink>
-            <FooterLink href="#">
-              <i className="fab fa-twitter">
-                <span style={{ marginLeft: "10px" }}>Twitter</span>
-              </i>
-            </FooterLink>
-            <FooterLink href="#">
-              <i className="fab fa-youtube">
-                <span style={{ marginLeft: "10px" }}>Youtube</span>
-              </i>
-            </FooterLink>
+            </Link>
           </Column>
         </Row>
       </Container>
