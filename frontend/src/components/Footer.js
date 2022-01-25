@@ -9,29 +9,33 @@ import {
   Image,
 } from "../styles/FooterStyles";
 import { Link } from "react-router-dom";
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import { faTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+
 
 const Footer = () => {
   return (
-    <Box>
+    <Box >
       {/* <h1 style={{ color: "white",
 				textAlign: "center",
 				marginTop: "-50px" }}>
 		360
 	</h1> */}
-      <Container>
-        <Row>
-          <Column>
+  <Container>
+        <Row >
+          <Column className="borderLine"> 
             <Image
               src={"/logo-footer360.svg"}
               alt="360 Fund Insight Limited "
-            ></Image>
-            <Paragraph>
+              ></Image>
+            <Paragraph >
               {" "}
               This website is for investment professionals only. It is not
               intended for private investors. Private investors who are
               interested in our investment services should contact a financial
               professional.
             </Paragraph>
+            
           </Column>
           <Column>
             <Heading>COMPANY</Heading>
@@ -71,20 +75,22 @@ const Footer = () => {
             </Link>
           </Column> */}
           <Column>
-            <Heading>Social Media</Heading>
-            <Link to="/facebook" className="footerLink">
-              <i className="fab fa-facebook-f">
+            <Heading>FOLLOW US</Heading>
+            <a target = "_blank" rel="noopener noreferrer" href="https://twitter.com/360FundInsight" className="footerLink">
+              <FontAwesomeIcon icon = {faTwitter}>
                 <span>Twitter</span>
-              </i>
-            </Link>
-            <Link to="/linkedin" className="footerLink">
-              <i className="fab fa-instagram">
+              </FontAwesomeIcon>
+            </a>
+
+            <a target = "_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/360-fund-insight-limited/about/" className="footerLink">
+              <FontAwesomeIcon icon = {faLinkedinIn}>
                 <span>LinkedIn</span>
-              </i>
-            </Link>
+              </FontAwesomeIcon>
+            </a>
+            
           </Column>
         </Row>
-      </Container>
+        </Container>
     </Box>
   );
 };
