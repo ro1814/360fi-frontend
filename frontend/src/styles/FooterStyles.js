@@ -6,6 +6,7 @@ export const Box = styled.div`
   position: absolute;
   bottom: 0;
   width: 100%;
+  
 
   @media (max-width: 624px) {
     padding: 70px 70px 70px 30px;
@@ -13,16 +14,17 @@ export const Box = styled.div`
     width: auto;
     //bottom: 0;
     min-height: 100vh;
+    
   }
 `;
 
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
   max-width: 1000px;
   margin: 0 auto;
   background: #333;
+  
 
   
 `;
@@ -31,17 +33,25 @@ export const Column = styled.div`
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-left: 60px;
+
+  
+  
 
 `;
 
 export const Row = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
-  grid-gap: 18px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
+  
+  
 
   @media (max-width: 1000px) {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    flex-direction: column;
+    align-items: center;
+    
   }
 
   .footerLink {

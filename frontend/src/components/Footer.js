@@ -46,7 +46,7 @@ const Footer = () => {
               Contact us
             </Link>
           </Column>
-          <Column>
+          {/* <Column>
             <Heading>OUR SERVICES</Heading>
             <Link to="/research" className="footerLink">
               Research
@@ -57,8 +57,8 @@ const Footer = () => {
             <Link to="/solutions" className="footerLink">
               Solutions
             </Link>
-          </Column>
-          <Column>
+          </Column> */}
+          {/* <Column>
             <Heading>LEGAL</Heading>
             <Link to="/cookies" className="footerLink">
               Cookies policy
@@ -69,7 +69,7 @@ const Footer = () => {
             <Link to="/privacy" className="footerLink">
               Privacy policy
             </Link>
-          </Column>
+          </Column> */}
           <Column>
             <Heading>Social Media</Heading>
             <Link to="/facebook" className="footerLink">
