@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { HeaderWrapper } from "../styles/Header";
-import { Link } from "react-router-dom";
 import Navbar from "./navbar/Navbar";
 import MenuButton from "./navbar/MenuButton";
+import LogoButton from "./navbar/LogoButton";
 
 function Header() {
   const [open, setOpen] = useState(false);
@@ -24,15 +24,8 @@ function Header() {
         handleClick={handleClick}
         handleClickClose={handleClickClose}
       />
-      <div className="container">
-      <img src="/logo-header360.svg" alt ="360 Logo Header" className="image"/>
-      <div className="middle">
-      <div className="text">Home</div>
-      </div>
-      </div>
+      <LogoButton open={open} handleClickClose={handleClickClose}/>
     </HeaderWrapper>
-
-    
   );
 }
 
