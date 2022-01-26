@@ -27,7 +27,7 @@ const Footer = () => {
             <Image
               src={"/logo-footer360.svg"}
               alt="360 Fund Insight Limited "
-              ></Image>
+              />
             <Paragraph >
               {" "}
               This website is for investment professionals only. It is not
