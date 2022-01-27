@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { MenuItems } from './MenuItems';
-import '../../styles/DropDownStyles';
+import '../../styles/DropDownStyles.css';
 import { Link } from 'react-router-dom';
 
 function Dropdown() {
@@ -17,7 +17,7 @@ function Dropdown() {
       >
         {MenuItems.map((item, index) => {
           return (
-            <li key={index}>
+            <li key={index} className='nav-links'>
               <Link
                 className={item.cName}
                 to={item.path}

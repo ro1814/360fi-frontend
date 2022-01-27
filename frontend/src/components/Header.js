@@ -25,7 +25,6 @@ function Header() {
 
   const handleClickDrop = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
-  const openMobileMenu = () => setClick(true)
 
   const onMouseEnter = () => {
     if (window.innerWidth < 160) {
@@ -45,7 +44,7 @@ function Header() {
 
   return (
     <HeaderWrapper>
-      <Navbar open={open} handleClickClose={handleClickClose} click={click} dropdown = {dropdown} handleClickDrop={handleClickDrop} openMobileMenu = { openMobileMenu} closeMobileMenu = {closeMobileMenu} onMouseEnter ={onMouseEnter} onMouseLeave = {onMouseLeave} />
+      <Navbar open={open} handleClickClose={handleClickClose} click={click} dropdown = {dropdown} handleClickDrop={handleClickDrop} closeMobileMenu = {closeMobileMenu} onMouseEnter ={onMouseEnter} onMouseLeave = {onMouseLeave} />
       <MenuButton
         open={open}
         handleClick={handleClick}
