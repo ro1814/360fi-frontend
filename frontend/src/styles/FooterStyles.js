@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 export const Box = styled.div`
+  display: block;
   padding: 70px 20px;
   background: #333;
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
 
