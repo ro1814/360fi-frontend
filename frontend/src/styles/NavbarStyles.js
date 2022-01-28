@@ -22,6 +22,12 @@ export const NavbarWrapper = styled.nav`
     padding-bottom: 80px;
   }
 
+  li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
 
   .contProducts {
     background-color: #97dbff;
@@ -32,23 +38,22 @@ export const NavbarWrapper = styled.nav`
     align-items: center;
     text-align: center;
     text-decoration: none;
-
-  li {
-    text-decoration: none;
-  }
   }
 
   .nav-links {
-      color: white;
-      text-decoration: none;
-      padding: 0.5rem 1rem;
-    }
+    color: black;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
 
-    .nav-links:hover {
-      background-color: #1888ff;
-      border-radius: 4px;
-      transition: all 0.2s ease-out;
-    }
+  .nav-links:hover {
+    background-color: #1888ff;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+  }
+  .nav-links-mobile {
+  display: none;
+}
 
   .contInsights {
     background-color: #63c9ff;
@@ -93,18 +98,6 @@ export const NavbarWrapper = styled.nav`
       display: flex;
       justify-content: flex-start;
       align-items: center;
-    }
-
-    .nav-links {
-      text-align: center;
-      padding: 2rem;
-      width: 100%;
-      display: table;
-    }
-
-    .nav-links:hover {
-      background-color: #1888ff;
-      border-radius: 0;
     }
     .contInsights {
       background-color: yellow;

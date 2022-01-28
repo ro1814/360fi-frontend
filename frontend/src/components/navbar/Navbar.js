@@ -16,7 +16,7 @@ function Navbar({
   return (
     <NavbarWrapper open={open} click={click}>
       <div className="contProducts" onClick={handleClickDrop}>
-        {/* <Link to="/products">Products and Services</Link> */}
+        {/* <Link to="/products">Products and Services</Link>  */}
         <li onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
           <ul className="nav-links" onClick={closeMobileMenu}>
             Products and Services
