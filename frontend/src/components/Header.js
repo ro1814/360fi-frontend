@@ -6,7 +6,7 @@ import LogoButton from "./navbar/LogoButton";
 
 function Header() {
 
-  //Varianbles for the Navbar
+  //Variables for the Navbar
   const [open, setOpen] = useState(false);
   
   const handleClick = () => {

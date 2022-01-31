@@ -1,7 +1,7 @@
 .dropdown-menu {
     background: red;
-    width: auto;
-    position:absolute;
+    width: 200px;
+    position: absolute;
     top: 60px;
     list-style: none;
     text-align: start;
@@ -10,8 +10,7 @@
   .dropdown-menu li {
     background: #1888ff;
     cursor: pointer;
-    
-  }
+     }
   
   .dropdown-menu li:hover {
     background: #5cabff;
@@ -31,7 +30,7 @@
     margin-top: 0;
   }
   
-  @media screen and (max-width: 960px) {
+  @media only screen and (min-width: 624px) {
     .fa-caret-down {
       display: none;
     }

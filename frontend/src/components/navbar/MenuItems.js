@@ -2,7 +2,7 @@ export const MenuItems = [
     {
       title: 'Data Feed',
       path: '/product/data-feed',
-      cName: 'dropdown-link'
+      cName: 'dropdown-link',
     },
     {
       title: 'Eagle Eye',

@@ -9,24 +9,22 @@ function Navbar({
   click,
   dropdown,
   closeMobileMenu,
-  handleClickDrop,
   onMouseEnter,
   onMouseLeave,
 }) {
   return (
     <NavbarWrapper open={open} click={click}>
-      <div className="contProducts" onClick={handleClickDrop}>
+      <div className="contProducts">
         {/* <Link to="/products">Products and Services</Link>  */}
         <li onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-          <ul className="nav-links" onClick={closeMobileMenu}>
-            Products and Services
-          </ul>
-          {dropdown && <Dropdown />}
+          <ul className="nav-links" onClick={closeMobileMenu} >Products and Services</ul>
+          {dropdown && <Dropdown  />}
         </li>
       </div>
       <div className="contInsights" onClick={handleClickClose}>
         <Link to="/insights">Insights</Link>
       </div>
+
       <div className="contMeet" onClick={handleClickClose}>
         <Link to="/meetus">Meet the Team</Link>
       </div>
