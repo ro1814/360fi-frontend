@@ -1,221 +1,28 @@
 import styled from "styled-components";
 
-export const NavbarWrapper = styled.nav`
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  position: fixed;
-  top: 10vh;
-  right: ${(props) => (props.open ? "0" : "100%")};
-  width: 100%;
-  height: 100%;
-  transition: right 0.3s linear;
+export const Logo = styled.img`
 
-  a {
-    //padding: 0.5rem 0.8rem;
-    font-weight: bold;
-    color: white;
+  display: inline-block;
+  
+  @media (max-width: 924px) {
+    width: 70%;
+  }
+`;
+
+export const NavLink = styled.div`
+
+.navLinkStyle {
+    background: yellow;
+  }
+
+  @media (max-width: 924px){
+
+    display: block;
+    margin-top: 10px;
+    padding: 4.2rem 1rem;
+    color: #0d6efd;
     text-decoration: none;
-    font-size: 22px;
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
-
-  li {
-    list-style-type: none;
-    margin-top: 0px;
-    padding: 0;
-    text-decoration: none;
-  }
-
-  .contProducts {
-    background-color: #97dbff;
-    width: 100%;
-    min-height: 22.5%;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    transition: color 0.15s ease-in-out, border-color 0.15s ease-in-out;
     text-align: center;
-    text-decoration: none;
-    font-size: 22px;
-
-    .dropdown-menu {
-      position: static;
-      top: 60px;
-      list-style: none;
-      text-align: start;
-    }
-
-    .dropdown-menu li {
-      background: #1888ff;
-      cursor: pointer;
-    }
-
-    .dropdown-menu li:hover {
-      background: #5cabff;
-    }
-
-    .dropdown-menu.clicked {
-      width: auto;
-    }
-
-    .dropdown-link {
-      display: flex;
-      height: 100%;
-      width: 100%;
-      text-decoration: none;
-      color: #fff;
-      padding: 0px;
-      margin-top: 0;
-      text-align: center;
-      font-size: 12px;
-    }
-
-    .nav-links {
-      background-color: #97dbff;
-      width: auto;
-      height: 22.5%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      text-decoration: none;
-    }
-
-    .nav-links:hover {
-      background-color: #1888ff;
-      border-radius: 0;
-    }
-  }
-
-  .contInsights {
-    background-color: #63c9ff;
-    width: 100%;
-    height: 22.5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .contMeet {
-    background-color: #0082c6;
-    width: 100%;
-    height: 22.5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .contReg {
-    background-color: #00689e;
-    width: 100%;
-    height: 22.5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  @media only screen and (min-width: 624px) {
-    flex-direction: row;
-    position: initial;
-    height: auto;
-    justify-content: space-evenly;
-    background: transparent;
-
-    .contProducts {
-      background-color: yellow;
-      width: initial;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      font-size: 18px;
-
-      .dropdown-menu {
-        background: red;
-        width: 200px;
-        position: absolute;
-        top: 60px;
-        list-style: none;
-        text-align: start;
-      }
-
-      .dropdown-menu li {
-        background: #1888ff;
-        cursor: pointer;
-      }
-
-      .dropdown-menu li:hover {
-        background: #5cabff;
-      }
-
-      .dropdown-menu.clicked {
-        display: none;
-      }
-
-      .dropdown-link {
-        display: block;
-        height: 100%;
-        width: 100%;
-        text-decoration: none;
-        color: #fff;
-        padding: 0px;
-        margin-top: 0;
-      }
-
-      @media only screen and (min-width: 624px) {
-        .fa-caret-down {
-          display: none;
-        }
-      }
-
-      .nav-links {
-        color: black;
-        text-decoration: none;
-        padding: 0.5rem 1rem;
-      }
-
-      .nav-links:hover {
-        background-color: #1888ff;
-        border-radius: 4px;
-        transition: all 0.2s ease-out;
-      }
-      .nav-links-mobile {
-        display: none;
-      }
-    }
-
-    .contInsights {
-      background-color: yellow;
-      width: initial;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-    }
-    .contMeet {
-      background-color: yellow;
-      width: initial;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-    }
-    .contReg {
-      background-color: yellow;
-      width: initial;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-    }
-
-    a {
-      padding: 0.5rem 0.8rem;
-      color: black;
-      text-decoration: none;
-      font-size: 18px;
-    }
   }
 `;
