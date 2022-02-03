@@ -1,6 +1,10 @@
 
 @media (max-width: 924px){
     /* Media queries to change background colors from mobile version navBar */
+   .navBarLogoLinkStyle{
+        background-color: transparent;
+
+    }
 
     .navbar .containerCustomedStyle {
         padding:0;   
