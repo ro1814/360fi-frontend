@@ -1,6 +1,6 @@
 import React from "react";
 
-//import '../styles/NavbarStyles.css'
+import '../styles/NavbarStyles.css'
 import { Logo, NavLink } from "../styles/NavbarStyles";
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
@@ -9,15 +9,16 @@ const Header = () => {
   return (
     <>
       <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
-        <Container>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto" >
-            <NavLink className="navLinkStyle">
+        <Container className="containerCustomedStyle" >
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" className="navLinkCustomed"/>
+          <Navbar.Collapse id="responsive-navbar-nav" className="navLinkCustomed">
+            <Nav className="me-auto" className="navLinkCustomed">
+            <NavLink className="navLinkProductsStyle">
 
               <NavDropdown
                 title="Products and Services"
                 id="collasible-nav-dropdown"
+                className="navLinkCustomed"
               >
                 
                 <LinkContainer to="/product/data-feed" >
@@ -50,18 +51,18 @@ const Header = () => {
               </NavDropdown>
               </NavLink>
 
-              <NavLink>
-              <LinkContainer to="/insights">
+              <NavLink className="navLinkInsightsStyle">
+              <LinkContainer to="/insights" className="navLinkCustomed">
                 <Nav.Link>Insights</Nav.Link>
               </LinkContainer>
               </NavLink>
-              <NavLink>
-              <LinkContainer to="/meetus">
+              <NavLink className="navLinkMeetStyle">
+              <LinkContainer to="/meetus" className="navLinkCustomed">
                 <Nav.Link>Meet the Team</Nav.Link>
               </LinkContainer>
               </NavLink>
-              <NavLink>
-              <LinkContainer to="/login">
+              <NavLink className="navLinkLoginStyle">
+              <LinkContainer to="/login" className="navLinkCustomed">
                 <Nav.Link>Register/Login</Nav.Link>
               </LinkContainer>
               </NavLink>
