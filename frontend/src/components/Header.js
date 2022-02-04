@@ -8,14 +8,15 @@ import { LinkContainer } from "react-router-bootstrap";
 const Header = () => {
   return (
     <>
-      <Navbar collapseOnSelect expand="xl" bg="light" variant="light" >
-      
+      <Navbar collapseOnSelect expand="xl" bg="light" variant="light">
         <Container className="containerCustomedStyle">
-        {/* <Navbar.Brand className="navBarLogoLinkStyle">
-          <LinkContainer to="/">
+      
+          <Navbar.Brand className="navBarLogoLinkStyle ">
+          <LinkContainer to="/" >
           <Logo src="/logo-header360.svg" />
         </LinkContainer>
-        </Navbar.Brand> */}
+        </Navbar.Brand>
+
           <Navbar.Toggle
             aria-controls="responsive-navbar-nav"
             className="navLinkCustomed"
@@ -24,19 +25,25 @@ const Header = () => {
             id="responsive-navbar-nav"
             className="navLinkCustomed"
           >
-            <Nav className="me-auto" className="navLinkCustomed">
+            <Nav className="me-auto navLinkCustomed">
               <NavLink className="navLinkProductsStyle">
                 <NavDropdown
                   title="Products and Services"
                   id="collasible-nav-dropdown"
                   className="navLinkCustomed"
                 >
+                  <div className='dataCard'>
+
                   <LinkContainer to="/product/data-feed">
-                    <NavDropdown.Item>Data Feed</NavDropdown.Item>
+                    <NavDropdown.Item >Data Feed</NavDropdown.Item>
                   </LinkContainer>
+                 </div>
+                  
+                  <div className='dataCard'>
                   <LinkContainer to="/product/eagle-eye">
                     <NavDropdown.Item>Eagle Eye</NavDropdown.Item>
                   </LinkContainer>
+                  </div>
                   <LinkContainer to="/product/corporate-actions">
                     <NavDropdown.Item>Corporate Actions</NavDropdown.Item>
                   </LinkContainer>
@@ -75,20 +82,13 @@ const Header = () => {
                   <Nav.Link>Register/Login</Nav.Link>
                 </LinkContainer>
               </NavLink>
-            </Nav>
-
+          </Nav>
           </Navbar.Collapse>
-          
-          <Navbar.Brand className="navBarLogoLinkStyle">
-          <LinkContainer to="/">
-          <Logo src="/logo-header360.svg" />
-        </LinkContainer>
-        </Navbar.Brand>
+         
+
+
         </Container>
-        
       </Navbar>
-      
-      
     </>
   );
 };

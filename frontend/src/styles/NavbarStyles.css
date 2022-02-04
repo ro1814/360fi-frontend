@@ -3,7 +3,7 @@
     /* Media queries to change background colors from mobile version navBar */
    .navBarLogoLinkStyle{
         background-color: transparent;
-
+        width: 20%;
     }
 
     .navbar .containerCustomedStyle {
@@ -34,5 +34,35 @@
         color:white !important;
        
 
+    }
+    .dropdown-menu{
+        border: transparent !important;
+    }
+    .dataCard{
+        display: flex;
+        justify-content: center;
+        background-color: #63C9FF;
+        margin: 5%;
+        width: 0%;
+        padding: 25%;
+        flex-direction: row;
+        border-radius: 5%;
+        text-align: center !important;
+        box-sizing: content-box;
+        padding-top: initial;
+        white-space: none !important;
+    }
+    .dropdown-item {
+        display: flex;
+        flex: content;
+        white-space: none !important;
+        color: white !important;
+        width: auto !important;
+
+    }
+    .dropdown-item.active, .dropdown-item:active{
+        background-color: transparent !important;
+        white-space: none !important;
+        display: contents !important;
     }
 }
