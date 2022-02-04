@@ -39,31 +39,52 @@ const Header = () => {
                   </LinkContainer>
                  </div>
                   
-                  <div className='dataCard'>
-                  <LinkContainer to="/product/eagle-eye">
+                 <div className='dataCard'>
+                  
+                  <LinkContainer to="/product/eagle-eye" >
                     <NavDropdown.Item>Eagle Eye</NavDropdown.Item>
                   </LinkContainer>
-                  </div>
+                 </div>
+                  
+                 <div className='dataCard'>
+
                   <LinkContainer to="/product/corporate-actions">
                     <NavDropdown.Item>Corporate Actions</NavDropdown.Item>
                   </LinkContainer>
+                 </div>
+                 <div className='dataCard'>
+
                   <LinkContainer to="/product/value-for-money">
                     <NavDropdown.Item>Value for Money</NavDropdown.Item>
                   </LinkContainer>
+                 </div>
+                 <div className='dataCard'>
+
                   <LinkContainer to="/product/black-litterman">
                     <NavDropdown.Item>Black Litterman</NavDropdown.Item>
                   </LinkContainer>
+                 </div>
+                 <div className='dataCard'>
+
                   <LinkContainer to="/product/esg-sfdr-reporting">
                     <NavDropdown.Item>ESG SFDR Reporting</NavDropdown.Item>
                   </LinkContainer>
+                 </div>
+                 <div className='dataCard'>
+
                   <LinkContainer to="/product/competitive-analysis">
                     <NavDropdown.Item>Competitive Analysis</NavDropdown.Item>
                   </LinkContainer>
+                 </div>
+                 <div className='dataCard'>
+
                   <LinkContainer to="/products">
                     <NavDropdown.Item>
-                      See all Products and Services
+                      See all..
                     </NavDropdown.Item>
                   </LinkContainer>
+                 </div>
+
                 </NavDropdown>
               </NavLink>
 
