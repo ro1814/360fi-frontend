@@ -1,17 +1,39 @@
 
 @media (max-width: 924px){
     /* Media queries to change background colors from mobile version navBar */
-   .navBarLogoLinkStyle{
+   .navbar {
+       background-color: #CBEDFF;
+       padding-bottom: 0rem !important;
+   }
+    .navBarLogoLinkStyle{
         background-color: transparent;
-        width: 20%;
+        width: 40%;
+        margin-left: 15px;
+        
+    }
+    .navbar-light .navbar-toggler  {
+        color: transparent !important;
+        border-color: none !important;
+    }
+    .navbar-toggler {
+        margin-right: 15px;
+    }
+    
+    .navbar-light .navbar-toggler{
+        border: none !important;
+    }
+    .bg-light {
+       
+        background:#CBEDFF !important ;
     }
 
     .navbar .containerCustomedStyle {
-        padding:0;   
-      }
+        padding:0;
+        background-color: #CBEDFF;
+    }
       
     .navLinkProductsStyle {
-        background: #CBEDFF;
+        background: #97DBFF;
     
       }
     .navLinkInsightsStyle {
@@ -32,12 +54,16 @@
     
     .navbar-light .navbar-nav .nav-link {
         color:white !important;
-       
-
+        padding-bottom: 20px;
     }
     .dropdown-menu{
         border: transparent !important;
+        margin: -16px !important;
     }
+    .dropdown-toggle::after{
+        content: none !important;
+    }
+
     .dataCard{
         display: inline-flex;
         justify-content: center;

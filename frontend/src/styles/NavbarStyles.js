@@ -15,7 +15,7 @@ export const NavLink = styled.div`
 
     display: block;
     margin-top:0;
-    padding: 4.7rem 1rem;
+    padding: 4.3rem 1rem;
     color: #0d6efd;
     text-decoration: none;
     transition: color 0.15s ease-in-out, border-color 0.15s ease-in-out;

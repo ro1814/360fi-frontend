@@ -8,7 +8,7 @@ import { LinkContainer } from "react-router-bootstrap";
 const Header = () => {
   return (
     <>
-      <Navbar collapseOnSelect expand="xl" bg="light" variant="light">
+      <Navbar collapseOnSelect expand="xl" variant="light">
         <Container className="containerCustomedStyle">
       
           <Navbar.Brand className="navBarLogoLinkStyle ">

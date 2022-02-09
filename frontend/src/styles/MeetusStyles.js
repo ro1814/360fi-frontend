@@ -29,13 +29,13 @@ export const Greeting = styled.div`
   text-align: justify;
 
   @media (max-width: 924px) {
-    width: auto;
+    width: 85%;
+    margin-left: 7%;
   }
 `;
 
 export const Paragraph = styled.p`
   font-size: 24px;
-  display: block;
   color: #6b6b6e;
 
   @media (max-width: 924px) {
