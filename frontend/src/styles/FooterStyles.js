@@ -4,13 +4,13 @@ export const Box = styled.div`
   display: block;
   padding: 70px 20px;
   background: #333;
-  position: static;
+  position: relative;
   bottom: 0;
   width: 100%;
 
   @media (max-width: 624px) {
     padding: 70px 70px 70px 30px;
-    position: static;
+    position: relative;
     width: auto;
     //bottom: 0;
     min-height: 100vh;
