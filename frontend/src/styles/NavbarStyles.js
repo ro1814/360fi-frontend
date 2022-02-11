@@ -6,16 +6,21 @@ export const Logo = styled.img`
   
   @media (max-width: 924px) {
     width: 70%;
+    padding-left: 1%;
   }
 `;
 
 export const NavLink = styled.div`
-
+  .nav-link {
+        margin: 25px;
+        padding: 5px; 
+        
+    }
   @media (max-width: 924px){
 
     display: block;
     margin-top:0;
-    padding: 4.3rem 1rem;
+    padding: 11.6% 1rem;
     color: #0d6efd;
     text-decoration: none;
     transition: color 0.15s ease-in-out, border-color 0.15s ease-in-out;

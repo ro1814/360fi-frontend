@@ -7,7 +7,9 @@ import {
   Title,
   BioParagraph,
   BioName,
-  BioImagen
+  BioImagen,
+  MobileCard,
+  BioSpan,
 } from "../styles/MeetusStyles";
 
 const MeetTheTeamScreen = () => {
@@ -41,7 +43,7 @@ const MeetTheTeamScreen = () => {
       <Container>
         <div className="row text-center">
           <div className="col-xl-3 col-sm-6 mb-5">
-            <div className="bg-white rounded shadow-sm py-5 px-4">
+            <div className="bg-white rounded shadow-sm py-5 px-4 ">
               <BioImagen
                 src="/images/meetusimages/EnriquePardo.png"
                 alt="Enrique Pardo CEO"
@@ -55,11 +57,11 @@ const MeetTheTeamScreen = () => {
                 aria-expanded={open}
               >
                 Enrique Pardo
+                
               </BioName>
-              <span className="small text-uppercase text-muted">
-                CEO
-              </span>
-              <Collapse in={open}>
+              <BioSpan className="small text-uppercase text-muted">CCO</BioSpan>
+              
+              <Collapse in={open} className="example">
                 <div id="example-collapse-text">
                   <BioParagraph>
                     Enrique had been working in the Asset Management industry
@@ -78,7 +80,6 @@ const MeetTheTeamScreen = () => {
                   </BioParagraph>
                 </div>
               </Collapse>
-              
             </div>
           </div>
           <div className="col-xl-3 col-sm-6 mb-5">
@@ -90,9 +91,7 @@ const MeetTheTeamScreen = () => {
                 className="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
               />
               <BioName className="mb-0">Pedro Marazuela</BioName>
-              <span className="small text-uppercase text-muted">
-                COO
-              </span>
+              <span className="small text-uppercase text-muted">COO</span>
             </div>
           </div>
           <div className="col-xl-3 col-sm-6 mb-5">
@@ -104,9 +103,7 @@ const MeetTheTeamScreen = () => {
                 className="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
               />
               <BioName className="mb-0">Katy Gavelas</BioName>
-              <span className="small text-uppercase text-muted">
-                CCO
-              </span>
+              <span className="small text-uppercase text-muted">CCO</span>
             </div>
           </div>
           <div className="col-xl-3 col-sm-6 mb-5">
@@ -118,9 +115,7 @@ const MeetTheTeamScreen = () => {
                 className="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
               />
               <BioName className="mb-0">Philip Lindsay</BioName>
-              <span className="small text-uppercase text-muted">
-                Chairman
-              </span>
+              <span className="small text-uppercase text-muted">Chairman</span>
             </div>
           </div>
 
@@ -133,12 +128,9 @@ const MeetTheTeamScreen = () => {
                 className="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
               />
               <BioName className="mb-0">Philip Lindsay</BioName>
-              <span className="small text-uppercase text-muted">
-                Chairman
-              </span>
+              <span className="small text-uppercase text-muted">Chairman</span>
             </div>
           </div>
-          
         </div>
       </Container>
     </>

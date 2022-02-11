@@ -1,10 +1,41 @@
+.navbar > .container{
+    width: 100% !important;
+    
+    
+    font-size: 22px;
+    padding-left: 3.5%;
+    
+}
 
+.dropdown-menu[data-bs-popper] {
+    left: 45px !important;
+    width: 70% ;
+}
+.dropdown-item{
+    text-align: center !important;
+}
 @media (max-width: 924px){
     /* Media queries to change background colors from mobile version navBar */
    .navbar {
        background-color: #CBEDFF;
        padding-bottom: 0rem !important;
    }
+   .navbar > .container{
+    width: 100% !important;
+    
+    font-size: x-large;
+    padding-left: 5%;
+    
+}
+
+.dropdown-menu[data-bs-popper] {
+    left: 15px !important;
+    width: auto ;
+}
+.dropdown-item{
+    text-align: center !important;
+}
+   
     .navBarLogoLinkStyle{
         background-color: transparent;
         width: 40%;
@@ -60,6 +91,7 @@
         border: transparent !important;
         margin: -16px !important;
     }
+    
     .dropdown-toggle::after{
         content: none !important;
     }
@@ -79,8 +111,8 @@
     }
     .dropdown-item {
         white-space: inherit !important;
-        display: flex;
-        flex: content;
+        display: flex !important;
+        flex: content !important;
         color: white !important;
         width: auto !important;
 
@@ -90,4 +122,5 @@
         white-space: none !important;
         display: contents !important;
     }
+    
 }
