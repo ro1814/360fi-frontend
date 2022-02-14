@@ -1,6 +1,9 @@
-import React, { useState } from "react";
-import { Container, Collapse } from "react-bootstrap";
+import React from "react";
+import  '../styles/MeetUsStyles.css';
+import { Container, Modal } from "react-bootstrap";
+
 import {
+  ContainerModal,
   MeetTitle,
   Greeting,
   Paragraph,
@@ -8,19 +11,73 @@ import {
   BioParagraph,
   BioName,
   BioImagen,
-  MobileCard,
   BioSpan,
-} from "../styles/MeetusStyles";
+} from "../styles/MeetusStyles.js";
+
+
+function BioModal(props) {
+  return (
+    <Modal
+      {...props}
+
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+
+      <ContainerModal>
+      <div className="row text-center">
+        <Modal.Body>
+          <BioImagen
+            src="/images/meetusimages/EnriquePardo.png"
+            alt="Enrique Pardo CEO"
+            width="100"
+            className="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
+          />
+
+          <BioName variant="primary">Enrique Pardo</BioName>
+          <BioSpan
+            variant="primary"
+            className="small text-uppercase text-muted"
+          >
+            CHIEF EXECUTIVE OFFICER
+          </BioSpan>
+          <BioParagraph>
+            Enrique had been working in the Asset Management industry for over
+            30 years before co-founding 360 Fund Insight. Enrique worked at
+            Allfunds Bank as Global Head of Investment and was a member of the
+            Executive Committee since 2013.
+          </BioParagraph>
+          <BioParagraph>
+            Enrique has years of experience leading teams of Investment
+            Professionals providing Fund Research,Governance, and Investment
+            Solutions. CFA charter holder since 2003.
+          </BioParagraph>
+          <BioParagraph>
+            *Enrique holds Director Responsibilities as described by the FCA
+          </BioParagraph>
+        </Modal.Body>
+      </div>
+      </ContainerModal>
+
+
+    </Modal>
+  );
+}
 
 const MeetTheTeamScreen = () => {
-  const [open, setOpen] = useState(false);
+  //const [open, setOpen] = useState(false);
+  const [modalShow, setModalShow] = React.useState(false);
 
   return (
     <>
       <MeetTitle>
-        <Title> Our Team</Title>
+        <Title> Meet the Team </Title>
       </MeetTitle>
       <Greeting>
+        <Title>
+          <strong>Description</strong>
+        </Title>
         <Paragraph>
           We are a vastly experienced team that moved away from legacy business
           models to create something innovative in our industry.
@@ -50,36 +107,13 @@ const MeetTheTeamScreen = () => {
                 width="100"
                 className="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
               />
-              <BioName
-                className="mb-0"
-                onClick={() => setOpen(!open)}
-                aria-controls="example-collapse-text"
-                aria-expanded={open}
-              >
+              <BioName variant="primary" onClick={() => setModalShow(true)}>
                 Enrique Pardo
-                
               </BioName>
               <BioSpan className="small text-uppercase text-muted">CCO</BioSpan>
-              
-              <Collapse in={open} className="example">
-                <div id="example-collapse-text">
-                  <BioParagraph>
-                    Enrique had been working in the Asset Management industry
-                    for over 30 years before co-founding 360 Fund Insight.
-                    Enrique worked at Allfunds Bank as Global Head of Investment
-                    and was a member of the Executive Committee since 2013.
-                  </BioParagraph>
-                  <BioParagraph>
-                    Enrique has years of experience leading teams of Investment
-                    Professionals providing Fund Research,Governance, and
-                    Investment Solutions. CFA charter holder since 2003.
-                  </BioParagraph>
-                  <BioParagraph>
-                    *Enrique holds Director Responsibilities as described by the
-                    FCA
-                  </BioParagraph>
-                </div>
-              </Collapse>
+
+              <BioModal show={modalShow} onHide={() => setModalShow(false)}className="modal-content-background" />
+
             </div>
           </div>
           <div className="col-xl-3 col-sm-6 mb-5">

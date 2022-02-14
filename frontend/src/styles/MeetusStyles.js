@@ -41,7 +41,6 @@ export const Paragraph = styled.p`
   color: #6b6b6e;
 
   @media (max-width: 924px) {
-    
     width: auto;
     margin-right: 0px;
     font-size: 0.75rem;
@@ -50,13 +49,9 @@ export const Paragraph = styled.p`
 `;
 
 export const MobileCard = styled.div`
-
-
   @media (max-width: 924px) {
     display: grid;
     flex-direction: column;
-    
-    
   }
 `;
 export const BioName = styled.h5`
@@ -71,30 +66,40 @@ export const BioName = styled.h5`
 `;
 
 export const BioSpan = styled.span`
-
   @media (max-width: 924px) {
     display: flex;
     flex-direction: column;
     align-self: center;
-    
   }
 `;
 export const BioParagraph = styled.p`
   font-size: 18px;
   text-align: justify;
-
+  margin: 30px;
+  padding: 5px;
   @media (max-width: 924px) {
-    background-color: #cbedff;
-    padding: 10px;
-    margin: 0px;
+    padding: 15px;
+    margin: 3px;
   }
 `;
 export const BioImagen = styled.img`
   background: #efefef;
+  text-align: center;
+  @media (max-width: 924px) {
+    background: #efefef !important;
+  }
+`;
+
+export const ContainerModal = styled.div`
+
 
   @media (max-width: 924px) {
     
-   
+    position: relative;
+    margin-top: -50px !important;
+    padding: 1px !important;
 
+    
   }
+
 `;
