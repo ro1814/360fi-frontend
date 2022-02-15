@@ -1,5 +1,7 @@
 import React from "react";
-import  '../styles/MeetUsStyles.css';
+
+import "../styles/MeetUsStyles.css";
+
 import { Container, Modal } from "react-bootstrap";
 
 import {
@@ -14,53 +16,48 @@ import {
   BioSpan,
 } from "../styles/MeetusStyles.js";
 
-
 function BioModal(props) {
   return (
     <Modal
       {...props}
-
       size="lg"
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
-
       <ContainerModal>
-      <div className="row text-center">
-        <Modal.Body>
-          <BioImagen
-            src="/images/meetusimages/EnriquePardo.png"
-            alt="Enrique Pardo CEO"
-            width="100"
-            className="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
-          />
+        <div className="row text-center">
+          <Modal.Body>
+            <BioImagen
+              src="/images/meetusimages/EnriquePardo.png"
+              alt="Enrique Pardo CEO"
+              width="100"
+              className="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
+            />
 
-          <BioName variant="primary">Enrique Pardo</BioName>
-          <BioSpan
-            variant="primary"
-            className="small text-uppercase text-muted"
-          >
-            CHIEF EXECUTIVE OFFICER
-          </BioSpan>
-          <BioParagraph>
-            Enrique had been working in the Asset Management industry for over
-            30 years before co-founding 360 Fund Insight. Enrique worked at
-            Allfunds Bank as Global Head of Investment and was a member of the
-            Executive Committee since 2013.
-          </BioParagraph>
-          <BioParagraph>
-            Enrique has years of experience leading teams of Investment
-            Professionals providing Fund Research,Governance, and Investment
-            Solutions. CFA charter holder since 2003.
-          </BioParagraph>
-          <BioParagraph>
-            *Enrique holds Director Responsibilities as described by the FCA
-          </BioParagraph>
-        </Modal.Body>
-      </div>
+            <BioName variant="primary">Enrique Pardo</BioName>
+            <BioSpan
+              variant="primary"
+              className="small text-uppercase text-muted"
+            >
+              CHIEF EXECUTIVE OFFICER
+            </BioSpan>
+            <BioParagraph>
+              Enrique had been working in the Asset Management industry for over
+              30 years before co-founding 360 Fund Insight. Enrique worked at
+              Allfunds Bank as Global Head of Investment and was a member of the
+              Executive Committee since 2013.
+            </BioParagraph>
+            <BioParagraph>
+              Enrique has years of experience leading teams of Investment
+              Professionals providing Fund Research,Governance, and Investment
+              Solutions. CFA charter holder since 2003.
+            </BioParagraph>
+            <BioParagraph>
+              *Enrique holds Director Responsibilities as described by the FCA
+            </BioParagraph>
+          </Modal.Body>
+        </div>
       </ContainerModal>
-
-
     </Modal>
   );
 }
@@ -75,9 +72,9 @@ const MeetTheTeamScreen = () => {
         <Title> Meet the Team </Title>
       </MeetTitle>
       <Greeting>
-        <Title>
+        <h2>
           <strong>Description</strong>
-        </Title>
+        </h2>
         <Paragraph>
           We are a vastly experienced team that moved away from legacy business
           models to create something innovative in our industry.
@@ -110,12 +107,16 @@ const MeetTheTeamScreen = () => {
               <BioName variant="primary" onClick={() => setModalShow(true)}>
                 Enrique Pardo
               </BioName>
-              <BioSpan className="small text-uppercase text-muted">CCO</BioSpan>
+              <BioSpan className="small text-uppercase text-muted">CEO</BioSpan>
 
-              <BioModal show={modalShow} onHide={() => setModalShow(false)}className="modal-content-background" />
-
+              <BioModal
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+                className="modal-content-background"
+              />
             </div>
           </div>
+
           <div className="col-xl-3 col-sm-6 mb-5">
             <div className="bg-white rounded shadow-sm py-5 px-4">
               <BioImagen
@@ -128,6 +129,7 @@ const MeetTheTeamScreen = () => {
               <span className="small text-uppercase text-muted">COO</span>
             </div>
           </div>
+
           <div className="col-xl-3 col-sm-6 mb-5">
             <div className="bg-white rounded shadow-sm py-5 px-4">
               <BioImagen
@@ -140,6 +142,7 @@ const MeetTheTeamScreen = () => {
               <span className="small text-uppercase text-muted">CCO</span>
             </div>
           </div>
+
           <div className="col-xl-3 col-sm-6 mb-5">
             <div className="bg-white rounded shadow-sm py-5 px-4">
               <BioImagen
@@ -156,13 +159,133 @@ const MeetTheTeamScreen = () => {
           <div className="col-xl-3 col-sm-6 mb-5">
             <div className="bg-white rounded shadow-sm py-5 px-4">
               <BioImagen
-                src="/images/meetusimages/PhilLindsay.png"
-                alt="Phil Lindsay (Chairman)"
+                src="/images/meetusimages/ChetanModi.png"
+                alt="Chetan Modi (CCO-Chief Commercial Officer) "
                 width="100"
                 className="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
               />
-              <BioName className="mb-0">Philip Lindsay</BioName>
-              <span className="small text-uppercase text-muted">Chairman</span>
+              <BioName className="mb-0">Chetan Modi</BioName>
+              <span className="small text-uppercase text-muted">CCO</span>
+            </div>
+          </div>
+
+          <div className="col-xl-3 col-sm-6 mb-5">
+            <div className="bg-white rounded shadow-sm py-5 px-4">
+              <BioImagen
+                src="/images/meetusimages/LuisBenitez.png"
+                alt="Luis Benitez (CIO-Chief Information Officer) "
+                width="100"
+                className="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
+              />
+              <BioName className="mb-0">Luis Benitez</BioName>
+              <span className="small text-uppercase text-muted">CIO</span>
+            </div>
+          </div>
+
+          <div className="col-xl-3 col-sm-6 mb-5">
+            <div className="bg-white rounded shadow-sm py-5 px-4">
+              <BioImagen
+                src="/images/meetusimages/FernandoVasconcellos.png"
+                alt="Fernando Vasconcellos (HOIS-Head Of IT Systems) "
+                width="100"
+                className="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
+              />
+              <BioName className="mb-0">Fernando Vasconcellos</BioName>
+              <span className="small text-uppercase text-muted">
+                Head Of IT Systems
+              </span>
+            </div>
+          </div>
+
+          <div className="col-xl-3 col-sm-6 mb-5">
+            <div className="bg-white rounded shadow-sm py-5 px-4">
+              <BioImagen
+                src="/images/meetusimages/OlgaRosario.png"
+                alt="Olga Rosario (HOF-Head of Finance and Human Resources) "
+                width="100"
+                className="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
+              />
+              <BioName className="mb-0">Olga Rosario</BioName>
+              <span className="small text-uppercase text-muted">
+                Head of Finance and RRHH
+              </span>
+            </div>
+          </div>
+
+          <div className="col-xl-3 col-sm-6 mb-5">
+            <div className="bg-white rounded shadow-sm py-5 px-4">
+              <BioImagen
+                src="/images/meetusimages/FernandoZapata.png"
+                alt="Fernando Zapata (Head of Marketing and Communication)"
+                width="100"
+                className="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
+              />
+              <BioName className="mb-0">Fernando Zapata</BioName>
+              <span className="small text-uppercase text-muted">
+                Head of Marketing and Communication
+              </span>
+            </div>
+          </div>
+
+          <div className="col-xl-3 col-sm-6 mb-5">
+            <div className="bg-white rounded shadow-sm py-5 px-4">
+              <BioImagen
+                src="/images/meetusimages/JorgeReque.png"
+                alt="Jorge Reque
+                (Data Governance. Product specialist Corporate Actions)"
+                width="100"
+                className="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
+              />
+              <BioName className="mb-0">Jorge Reque</BioName>
+              <span className="small text-uppercase text-muted">
+                Data Governance. Product specialist Corporate Actions
+              </span>
+            </div>
+          </div>
+
+          <div className="col-xl-3 col-sm-6 mb-5">
+            <div className="bg-white rounded shadow-sm py-5 px-4">
+              <BioImagen
+                src="/images/meetusimages/PabloBadenes.png"
+                alt="Pablo Badenes
+                (Investment Analyst - Fund Selection)"
+                width="100"
+                className="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
+              />
+              <BioName className="mb-0">Pablo Badenes</BioName>
+              <span className="small text-uppercase text-muted">
+                Investment Analyst - Fund Selection
+              </span>
+            </div>
+          </div>
+
+          <div className="col-xl-3 col-sm-6 mb-5">
+            <div className="bg-white rounded shadow-sm py-5 px-4">
+              <BioImagen
+                src="/images/meetusimages/DanielAyquipa.png"
+                alt="Daniel Ayquipa (Investment Research - Portfolios)"
+                width="100"
+                className="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
+              />
+              <BioName className="mb-0">Daniel Ayquipa</BioName>
+              <span className="small text-uppercase text-muted">
+                Investment Research - Portfolios
+              </span>
+            </div>
+          </div>
+
+          <div className="col-xl-3 col-sm-6 mb-5">
+            <div className="bg-white rounded shadow-sm py-5 px-4">
+              <BioImagen
+                src="/images/meetusimages/CristinaArranz.png"
+                alt="Cristina Arranz (Investment Analyst)"
+                width="100"
+                className="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
+              />
+              <BioName className="mb-0">Cristina Arranz</BioName>
+              <span className="small text-uppercase text-muted">
+                Senior Investment Analyst
+              </span>
             </div>
           </div>
         </div>

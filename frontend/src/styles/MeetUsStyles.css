@@ -1,6 +1,11 @@
 
 @media (max-width: 924px){
-    .modal-content{
+
+    div.modal-body{
+        padding: 2px;
+    }
+    div.modal-content{
         background-color: #cbedff;
     }
+
 }

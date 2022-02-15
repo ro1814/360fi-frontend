@@ -11,6 +11,7 @@ export const MeetTitle = styled.div`
     width: auto;
   }
 `;
+
 export const Title = styled.h1`
   margin: 2%;
 
@@ -77,6 +78,7 @@ export const BioParagraph = styled.p`
   text-align: justify;
   margin: 30px;
   padding: 5px;
+  
   @media (max-width: 924px) {
     padding: 15px;
     margin: 3px;
@@ -85,8 +87,11 @@ export const BioParagraph = styled.p`
 export const BioImagen = styled.img`
   background: #efefef;
   text-align: center;
+  filter: grayscale(100%);
   @media (max-width: 924px) {
     background: #efefef !important;
+    border-color:#cbedff ;
+    
   }
 `;
 

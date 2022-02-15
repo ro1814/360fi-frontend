@@ -13,10 +13,12 @@ const Header = () => {
       
           <Navbar.Brand className="navBarLogoLinkStyle ">
           <LinkContainer to="/" >
-          <Logo src="/logo-header360.svg" />
+          <Logo src="/logo-header360.svg"/>
+          
         </LinkContainer>
+        
         </Navbar.Brand>
-
+        
           <Navbar.Toggle
             aria-controls="responsive-navbar-nav"
             className="navLinkCustomed"
