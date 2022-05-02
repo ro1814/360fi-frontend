@@ -1,114 +1,140 @@
-.navbar > .container{
+.navbar>.container {
     width: 100% !important;
-    
-    
-    font-size: 22px;
-    padding-left: 3.5%;
-    
-}
-
-.dropdown-menu[data-bs-popper] {
-    left: 45px !important;
-    width: 70% ;
-}
-.dropdown-item{
-    text-align: center !important;
-}
-@media (max-width: 924px){
-    /* Media queries to change background colors from mobile version navBar */
-   .navbar {
-       background-color: #CBEDFF;
-       padding-bottom: 0rem !important;
-   }
-   .navbar > .container{
-    width: 100% !important;
-    
-    font-size: x-large;
+    font-size: 18px;
     padding-left: 5%;
-    
+
 }
 
-.dropdown-menu[data-bs-popper] {
-    left: 15px !important;
-    width: auto ;
-}
-.dropdown-item{
+.dropdown-item {
     text-align: center !important;
 }
-   
-    .navBarLogoLinkStyle{
+
+.badge {
+    line-height: 2 !important;
+    background-color: #00689E !important;
+
+}
+
+.navLinkCustomedContact {
+    color: white !important;
+}
+
+.rightRowStyle {
+    color: #63C9FF;
+}
+
+
+
+@media (max-width: 924px) {
+
+    /* Media queries to change background colors from mobile version navBar */
+    .navbar {
+        background-color: #CBEDFF;
+        padding-bottom: 0rem !important;
+    }
+
+    .navbar>.container {
+        width: 100% !important;
+
+        font-size: x-large;
+        padding-left: 5%;
+
+    }
+
+    .dropdown-menu[data-bs-popper] {
+        left: 15px !important;
+        width: auto;
+    }
+
+    .dropdown-item {
+        text-align: center !important;
+    }
+
+    .navBarLogoLinkStyle {
         background-color: transparent;
         width: 40%;
         margin-left: 15px;
-        
+
     }
-    .navbar-light .navbar-toggler  {
+
+    .navbar-light .navbar-toggler {
         color: transparent !important;
         border-color: none !important;
     }
+
     .navbar-toggler {
         margin-right: 15px;
     }
-    
-    .navbar-light .navbar-toggler{
+
+    .navbar-light .navbar-toggler {
         border: none !important;
     }
+
     .bg-light {
-       
-        background:#CBEDFF !important ;
+
+        background: #CBEDFF !important;
     }
 
     .navbar .containerCustomedStyle {
-        padding:0;
+        padding: 0;
         background-color: #CBEDFF;
     }
-      
+
+    .navLinkHomeStyle {
+        display: none !important;
+    }
+
     .navLinkProductsStyle {
         background: #97DBFF;
-    
-      }
+
+    }
+
     .navLinkInsightsStyle {
         background-color: #63C9FF;
     }
+
     .navLinkMeetStyle {
         background-color: #0082C6;
     }
+
     .navLinkLoginStyle {
         background-color: #00689E;
     }
-    
-    .navLinkCustomed{
-       font-weight: bold;
+
+    .navLinkCustomed {
+        font-weight: bold;
         size: 22px;
         color: white !important;
     }
-    
+
     .navbar-light .navbar-nav .nav-link {
-        color:white !important;
+        color: white !important;
         padding-bottom: 20px;
     }
-    .dropdown-menu{
+
+    .dropdown-menu {
         border: transparent !important;
         margin: -16px !important;
     }
-    
-    .dropdown-toggle::after{
+
+    .dropdown-toggle::after {
         content: none !important;
     }
 
-    .dataCard{
-        display: inline-flex;
-        justify-content: center;
-        background-color: #63C9FF;
-        margin: 3%;
+    .dataCard {
+        display: inline-flex !important;
+        justify-content: center !important;
+        background-color: #63C9FF !important;
+        margin: 3% !important;
         /* margin-left: 6%; */
-        width: 10%;
-        padding: 17%;
-        flex-direction: row;
-        border-radius: 5%;
+        width: 10% !important;
+        padding: 17% !important;
+        flex-direction: row !important;
+        border-radius: 5% !important;
         /* text-align: center !important; */
-        box-sizing: content-box;
+        box-sizing: content-box !important;
     }
+
     .dropdown-item {
         white-space: inherit !important;
         display: flex !important;
@@ -117,10 +143,19 @@
         width: auto !important;
 
     }
-    .dropdown-item.active, .dropdown-item:active{
+
+    .dropdown-item.active,
+    .dropdown-item:active {
         background-color: transparent !important;
         white-space: none !important;
         display: contents !important;
     }
-    
+
+    .badge {
+        display: block !important;
+        line-height: 2 !important;
+        background-color: #00689E !important;
+
+    }
+
 }

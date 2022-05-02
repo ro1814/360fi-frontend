@@ -11,6 +11,7 @@ import ProductsAndServicesScreen from "./screens/ProductsAndServicesScreen";
 import InsightsScreen from "./screens/InsightsScreen";
 import MeetTheTeamScreen from "./screens/MeetTheTeamScreen";
 import LoginRegisterScreen from "./screens/LoginRegisterScreen";
+import ContactUsScreen from './screens/ContactUsScreen';
 
 import DataFeedComponent from "./components/products/DataFeedComponent";
 import EagleEyeComponent from "./components/products/EagleEyeComponent";
@@ -40,6 +41,7 @@ function App() {
 
       <Route path="/insights" component={InsightsScreen} />
       <Route path="/meetus" component={MeetTheTeamScreen} />
+      <Route path="/contactus" component={ContactUsScreen} />
       <Route path="/login" component={LoginRegisterScreen} />
  
       
