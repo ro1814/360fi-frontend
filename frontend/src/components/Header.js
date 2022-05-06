@@ -42,41 +42,74 @@ const Header = () => {
                   id="collasible-nav-dropdown"
                   className="navLinkCustomed"
                 > 
+                <div>
                   <div className="dataCard">
                     <LinkContainer to="/product/data-feed">
-                      <NavDropdown.Item>Data Feed</NavDropdown.Item>
+                      <NavDropdown.Item>Data Feed
+                      <p> Product description</p>
+                      </NavDropdown.Item>
                     </LinkContainer>
                     
                   </div>
-                  
 
                   <div className="dataCard">
+                    <LinkContainer to="/product/value-for-money">
+                      <NavDropdown.Item>Value for Money
+                      <p> Product description</p>
+                      </NavDropdown.Item>
+                    </LinkContainer>
+                  </div>
+                  
+                  <div className="dataCard">
+                    <LinkContainer to="/product/bl-portafolios">
+                      <NavDropdown.Item>BL portfolios
+                      <p> Product description</p>
+                      </NavDropdown.Item>
+                    </LinkContainer>
+                  </div>
+
+                  <div className="dataCard">
+                    <LinkContainer to="/product/market-intelligence">
+                      <NavDropdown.Item>Market Intelligence
+                      <p> Product description</p>
+                      </NavDropdown.Item>
+                    </LinkContainer>
+                  </div>
+                  </div>
+
+                  <div>
+                  <div className="dataCard">
                     <LinkContainer to="/product/eagle-eye">
-                      <NavDropdown.Item>Eagle Eye</NavDropdown.Item>
+                      <NavDropdown.Item>Eagle Eye 
+                      <p> Product description</p>
+
+                      </NavDropdown.Item>
                     </LinkContainer>
                   </div>
 
                   
                   <div className="dataCard">
                     <LinkContainer to="/product/corporate-actions">
-                      <NavDropdown.Item>Corporate Actions</NavDropdown.Item>
+                      <NavDropdown.Item>Corporate Actions
+                      <p> Product description</p>
+
+                      </NavDropdown.Item>
                     </LinkContainer>
                   </div>
                   
-                  <div className="dataCard">
-                    <LinkContainer to="/product/value-for-money">
-                      <NavDropdown.Item>Value for Money</NavDropdown.Item>
-                    </LinkContainer>
-                  </div>
+                  
                 
-                  <div className="dataCard">
+                  {/* <div className="dataCard">
                     <LinkContainer to="/product/black-litterman">
                       <NavDropdown.Item>Black Litterman</NavDropdown.Item>
                     </LinkContainer>
-                  </div>
+                  </div> */}
+
                   <div className="dataCard">
                     <LinkContainer to="/product/esg-sfdr-reporting">
-                      <NavDropdown.Item>ESG SFDR Reporting</NavDropdown.Item>
+                      <NavDropdown.Item>ESG SFDR Reporting
+                      <p> Product description</p>
+                      </NavDropdown.Item>
                     </LinkContainer>
                   </div>
                   <div className="col">
@@ -85,6 +118,7 @@ const Header = () => {
                     <LinkContainer to="/product/competitive-analysis">
                       <NavDropdown.Item>Competitive Analysis</NavDropdown.Item>
                     </LinkContainer>
+                  </div>
                   </div>
                   <div className="dataCard">
                     <LinkContainer to="/products">

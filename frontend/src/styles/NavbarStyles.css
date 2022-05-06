@@ -24,10 +24,22 @@
 }
 
 
-
+@media (min-width: 925px){
+    .navbar-nav .dropdown-menu {
+        background-color: red;
+        position: static;
+    }
+    .dropdown-menu.show {
+        display: flex !important;
+        flex-direction: row !important;
+    }
+}
 @media (max-width: 924px) {
 
     /* Media queries to change background colors from mobile version navBar */
+    .dropdown-menu.show {
+        display: block !important;
+    }
     .navbar {
         background-color: #CBEDFF;
         padding-bottom: 0rem !important;
