@@ -5,10 +5,6 @@
 
 }
 
-.dropdown-item {
-    text-align: center !important;
-}
-
 .badge {
     line-height: 2 !important;
     background-color: #00689E !important;
@@ -19,19 +15,56 @@
     color: white !important;
 }
 
-.rightRowStyle {
+.arrowRightStyle {
     color: #63C9FF;
 }
 
 
 @media (min-width: 925px){
     .navbar-nav .dropdown-menu {
-        background-color: red;
+        
         position: static;
+        margin-left: -12em;
     }
     .dropdown-menu.show {
         display: flex !important;
         flex-direction: row !important;
+    }
+
+    .dropdown-item{
+        display: block;
+        width: 100%;
+        padding: 0.25rem 3rem !important;
+        clear: both;
+        font-weight: 400;
+        color: #212529;
+        text-align: inherit;
+        text-decoration: none;
+        white-space: nowrap;
+        background-color: transparent;
+        border: 0;
+        
+    }
+
+    .dataCard *:hover{
+        background: #63C9FF !important;
+        border-radius: 25px;
+
+    }
+
+    .dropdown-item.active, .dropdown-item:active {
+        color: #fff;
+        text-decoration: none;
+        background-color: #00689E !important;
+        border-radius: 25px;
+    }
+
+    .dataCard {
+        justify-content: justify !important;
+    }
+
+    .productDescription{
+        font-size: 12px;
     }
 }
 @media (max-width: 924px) {
@@ -56,10 +89,6 @@
     .dropdown-menu[data-bs-popper] {
         left: 15px !important;
         width: auto;
-    }
-
-    .dropdown-item {
-        text-align: center !important;
     }
 
     .navBarLogoLinkStyle {

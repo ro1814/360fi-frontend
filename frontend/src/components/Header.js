@@ -3,10 +3,8 @@ import React from "react";
 import "../styles/NavbarStyles.css";
 import { Logo, NavLink } from "../styles/NavbarStyles";
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRight  } from '@fortawesome/free-solid-svg-icons'
-
+import { faArrowRight, faDatabase, faChartLine, faChartPie, faEye, faCalendarDay, faLeaf, faChartBar, faLightbulb  } from '@fortawesome/free-solid-svg-icons'
 import { LinkContainer } from "react-router-bootstrap";
 
 const Header = () => {
@@ -45,8 +43,8 @@ const Header = () => {
                 <div>
                   <div className="dataCard">
                     <LinkContainer to="/product/data-feed">
-                      <NavDropdown.Item>Data Feed
-                      <p> Product description</p>
+                      <NavDropdown.Item><FontAwesomeIcon icon={faDatabase} className=""/> Data Feed
+                      <p className="productDescription"> Product description</p>
                       </NavDropdown.Item>
                     </LinkContainer>
                     
@@ -54,24 +52,24 @@ const Header = () => {
 
                   <div className="dataCard">
                     <LinkContainer to="/product/value-for-money">
-                      <NavDropdown.Item>Value for Money
-                      <p> Product description</p>
+                      <NavDropdown.Item><FontAwesomeIcon icon={faChartLine} className=""/> Value for Money
+                      <p className="productDescription"> Product description</p>
                       </NavDropdown.Item>
                     </LinkContainer>
                   </div>
                   
                   <div className="dataCard">
                     <LinkContainer to="/product/bl-portafolios">
-                      <NavDropdown.Item>BL portfolios
-                      <p> Product description</p>
+                      <NavDropdown.Item><FontAwesomeIcon icon={faChartPie} className=""/> BL portfolios
+                      <p className="productDescription"> Product description</p>
                       </NavDropdown.Item>
                     </LinkContainer>
                   </div>
 
                   <div className="dataCard">
                     <LinkContainer to="/product/market-intelligence">
-                      <NavDropdown.Item>Market Intelligence
-                      <p> Product description</p>
+                      <NavDropdown.Item><FontAwesomeIcon icon={faLightbulb} className=""/> Market Intelligence
+                      <p className="productDescription"> Product description</p>
                       </NavDropdown.Item>
                     </LinkContainer>
                   </div>
@@ -80,8 +78,8 @@ const Header = () => {
                   <div>
                   <div className="dataCard">
                     <LinkContainer to="/product/eagle-eye">
-                      <NavDropdown.Item>Eagle Eye 
-                      <p> Product description</p>
+                      <NavDropdown.Item><FontAwesomeIcon icon={faEye} className=""/> Eagle Eye 
+                      <p className="productDescription"> Product description</p>
 
                       </NavDropdown.Item>
                     </LinkContainer>
@@ -90,8 +88,8 @@ const Header = () => {
                   
                   <div className="dataCard">
                     <LinkContainer to="/product/corporate-actions">
-                      <NavDropdown.Item>Corporate Actions
-                      <p> Product description</p>
+                      <NavDropdown.Item><FontAwesomeIcon icon={faCalendarDay} className=""/> Corporate Actions
+                      <p className="productDescription"> Product description</p>
 
                       </NavDropdown.Item>
                     </LinkContainer>
@@ -107,8 +105,8 @@ const Header = () => {
 
                   <div className="dataCard">
                     <LinkContainer to="/product/esg-sfdr-reporting">
-                      <NavDropdown.Item>ESG SFDR Reporting
-                      <p> Product description</p>
+                      <NavDropdown.Item><FontAwesomeIcon icon={faLeaf} className=""/> ESG SFDR Reporting
+                      <p className="productDescription"> Product description</p>
                       </NavDropdown.Item>
                     </LinkContainer>
                   </div>
@@ -116,7 +114,7 @@ const Header = () => {
 
                   <div className="dataCard">
                     <LinkContainer to="/product/competitive-analysis">
-                      <NavDropdown.Item>Competitive Analysis</NavDropdown.Item>
+                      <NavDropdown.Item><FontAwesomeIcon icon={faChartBar} className=""/> Competitive Analysis <p className="productDescription"> Product description</p></NavDropdown.Item>
                     </LinkContainer>
                   </div>
                   </div>
@@ -147,7 +145,7 @@ const Header = () => {
 
               <NavLink className="navLinkContactStyle">
                 <LinkContainer to="/contactus" className="badge rounded-pill navLinkCustomedContact">
-                  <Nav.Link>Get in touch <FontAwesomeIcon icon={faArrowRight} className="rightRowStyle"/></Nav.Link> 
+                  <Nav.Link>Get in touch <FontAwesomeIcon icon={faArrowRight} className="arrowRightStyle"/></Nav.Link> 
                 </LinkContainer> 
               </NavLink>
 
