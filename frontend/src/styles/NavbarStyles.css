@@ -20,18 +20,19 @@
 }
 
 
-@media (min-width: 925px){
+@media (min-width: 925px) {
     .navbar-nav .dropdown-menu {
-        
+
         position: static;
         margin-left: -12em;
     }
+
     .dropdown-menu.show {
         display: flex !important;
         flex-direction: row !important;
     }
 
-    .dropdown-item{
+    .dropdown-item {
         display: block;
         width: 100%;
         padding: 0.25rem 3rem !important;
@@ -43,19 +44,19 @@
         white-space: nowrap;
         background-color: transparent;
         border: 0;
-        
     }
 
-    .dataCard *:hover{
+    .dataCard :hover{
         background: #63C9FF !important;
         border-radius: 25px;
-
     }
 
-    .dropdown-item.active, .dropdown-item:active {
+    .dropdown-item.active,
+    .dropdown-item:active {
         color: #fff;
         text-decoration: none;
-        background-color: #00689E !important;
+        /* background-color: #00689E !important; */
+        background-color: #0082C6 !important;
         border-radius: 25px;
     }
 
@@ -63,16 +64,98 @@
         justify-content: justify !important;
     }
 
-    .productDescription{
+    .productDescription {
         font-size: 12px;
     }
+
+    /* Icons in the navBar */
+    .dbIcon {
+        /* color: #0082C6; */
+        color: #00689E;
+        font-size: 25px;
+        margin-right: 10px;
+    }
+
+    .vfmIcon {
+        color: #00689E;
+        margin-right: 10px;
+        font-size: 25px;
+    }
+
+    .blpIcon {
+        color: #00689E;
+        margin-right: 10px;
+        font-size: 25px;
+    }
+
+    .miIcon {
+        color: #009EAC;
+        margin-right: 10px;
+        font-size: 25px;
+    }
+
+    .eeIcon {
+        color: #00A498;
+        margin-right: 10px;
+        font-size: 25px;
+    }
+
+    .caIcon {
+        /* color: #0082C6; */
+        color: #00689E;
+        margin-right: 10px;
+        font-size: 25px;
+    }
+    .esrIcon{
+        color: #00A881;
+        margin-right: 10px;
+        font-size: 25px;
+    }
+
+    .canIcon {
+        /* color: #0082C6; */
+        color: #00689E;
+        margin-right: 10px;
+        font-size: 25px;
+    }
+    .seeAllLink{
+        text-decoration:underline !important;
+    }
+    .seeAllIcon {
+        color: #00689E;
+        margin-right: 10px;
+    }
+
+    .labelStyle{
+        font-weight:bold;
+        color: #004E77 ;
+    }
+    .seeAll{
+        text-align: end !important;
+    }
+
+    div .seeAll *:hover{
+        background: none;
+    }
+
+     .seeAll .dropdown-item.active, .dropdown-item:active {
+        background: transparent !important;
+        color: #004E77 !important;
+    }
+    .dataCard .dropdown-item :hover{
+        background-color: transparent !important;
+    }
+    
 }
+
+
 @media (max-width: 924px) {
 
     /* Media queries to change background colors from mobile version navBar */
     .dropdown-menu.show {
         display: block !important;
     }
+
     .navbar {
         background-color: #CBEDFF;
         padding-bottom: 0rem !important;
@@ -198,5 +281,6 @@
         background-color: #00689E !important;
 
     }
+
 
 }

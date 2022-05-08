@@ -3,8 +3,18 @@ import React from "react";
 import "../styles/NavbarStyles.css";
 import { Logo, NavLink } from "../styles/NavbarStyles";
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRight, faDatabase, faChartLine, faChartPie, faEye, faCalendarDay, faLeaf, faChartBar, faLightbulb  } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faArrowRight,
+  faDatabase,
+  faChartLine,
+  faChartPie,
+  faEye,
+  faCalendarDay,
+  faLeaf,
+  faChartBar,
+  faLightbulb,
+} from "@fortawesome/free-solid-svg-icons";
 import { LinkContainer } from "react-router-bootstrap";
 
 const Header = () => {
@@ -17,7 +27,7 @@ const Header = () => {
               <Logo src="/logo-header360.svg" />
             </LinkContainer>
           </Navbar.Brand>
-              
+
           <Navbar.Toggle
             aria-controls="responsive-navbar-nav"
             className="navLinkCustomed"
@@ -26,10 +36,8 @@ const Header = () => {
             id="responsive-navbar-nav"
             className="navLinkCustomed"
           >
-            
             <Nav className="me-auto navLinkCustomed">
-
-            <NavLink className="navLinkHomeStyle">
+              <NavLink className="navLinkHomeStyle">
                 <LinkContainer to="/" className="navLinkCustomed">
                   <Nav.Link>Home</Nav.Link>
                 </LinkContainer>
@@ -39,89 +47,159 @@ const Header = () => {
                   title="Products"
                   id="collasible-nav-dropdown"
                   className="navLinkCustomed"
-                > 
-                <div>
-                  <div className="dataCard">
-                    <LinkContainer to="/product/data-feed">
-                      <NavDropdown.Item><FontAwesomeIcon icon={faDatabase} className=""/> Data Feed
-                      <p className="productDescription"> Product description</p>
-                      </NavDropdown.Item>
-                    </LinkContainer>
-                    
-                  </div>
+                >
+                  <div>
+                    <div className="dataCard">
+                      <LinkContainer to="/product/data-feed">
+                        <NavDropdown.Item>
+                          <FontAwesomeIcon
+                            icon={faDatabase}
+                            className="dbIcon"
+                          />{" "}
+                          <label className="labelStyle"> Data Feed </label>
+                          <p className="productDescription">
+                            {" "}
+                            Product description
+                          </p>
+                        </NavDropdown.Item>
+                      </LinkContainer>
+                    </div>
 
-                  <div className="dataCard">
-                    <LinkContainer to="/product/value-for-money">
-                      <NavDropdown.Item><FontAwesomeIcon icon={faChartLine} className=""/> Value for Money
-                      <p className="productDescription"> Product description</p>
-                      </NavDropdown.Item>
-                    </LinkContainer>
-                  </div>
-                  
-                  <div className="dataCard">
-                    <LinkContainer to="/product/bl-portafolios">
-                      <NavDropdown.Item><FontAwesomeIcon icon={faChartPie} className=""/> BL portfolios
-                      <p className="productDescription"> Product description</p>
-                      </NavDropdown.Item>
-                    </LinkContainer>
-                  </div>
+                    <div className="dataCard">
+                      <LinkContainer to="/product/value-for-money">
+                        <NavDropdown.Item>
+                          <FontAwesomeIcon
+                            icon={faChartLine}
+                            className="vfmIcon"
+                          />{" "}
+                          <label className="labelStyle">Value for Money</label>
+                          <p className="productDescription">
+                            {" "}
+                            Product description
+                          </p>
+                        </NavDropdown.Item>
+                      </LinkContainer>
+                    </div>
 
-                  <div className="dataCard">
-                    <LinkContainer to="/product/market-intelligence">
-                      <NavDropdown.Item><FontAwesomeIcon icon={faLightbulb} className=""/> Market Intelligence
-                      <p className="productDescription"> Product description</p>
-                      </NavDropdown.Item>
-                    </LinkContainer>
-                  </div>
+                    <div className="dataCard">
+                      <LinkContainer to="/product/bl-portafolios">
+                        <NavDropdown.Item>
+                          <FontAwesomeIcon
+                            icon={faChartPie}
+                            className="blpIcon"
+                          />{" "}
+                          <label className="labelStyle">BL portfolios</label>
+                          <p className="productDescription">
+                            {" "}
+                            Product description
+                          </p>
+                        </NavDropdown.Item>
+                      </LinkContainer>
+                    </div>
+
+                    <div className="dataCard">
+                      <LinkContainer to="/product/market-intelligence">
+                        <NavDropdown.Item>
+                          <FontAwesomeIcon
+                            icon={faLightbulb}
+                            className="miIcon"
+                          />{" "}
+                          <label className="labelStyle">
+                            Market Intelligence
+                          </label>
+                          <p className="productDescription">
+                            {" "}
+                            Product description
+                          </p>
+                        </NavDropdown.Item>
+                      </LinkContainer>
+                    </div>
                   </div>
 
                   <div>
-                  <div className="dataCard">
-                    <LinkContainer to="/product/eagle-eye">
-                      <NavDropdown.Item><FontAwesomeIcon icon={faEye} className=""/> Eagle Eye 
-                      <p className="productDescription"> Product description</p>
+                    <div className="dataCard">
+                      <LinkContainer to="/product/eagle-eye">
+                        <NavDropdown.Item>
+                          <FontAwesomeIcon icon={faEye} className="eeIcon" />{" "}
+                          <label className="labelStyle">Eagle Eye</label>
+                          <p className="productDescription">
+                            {" "}
+                            Product description
+                          </p>
+                        </NavDropdown.Item>
+                      </LinkContainer>
+                    </div>
 
-                      </NavDropdown.Item>
-                    </LinkContainer>
-                  </div>
+                    <div className="dataCard">
+                      <LinkContainer to="/product/corporate-actions">
+                        <NavDropdown.Item>
+                          <FontAwesomeIcon
+                            icon={faCalendarDay}
+                            className="caIcon"
+                          />{" "}
+                          <label className="labelStyle">
+                            Corporate Actions
+                          </label>
+                          <p className="productDescription">
+                            {" "}
+                            Product description
+                          </p>
+                        </NavDropdown.Item>
+                      </LinkContainer>
+                    </div>
 
-                  
-                  <div className="dataCard">
-                    <LinkContainer to="/product/corporate-actions">
-                      <NavDropdown.Item><FontAwesomeIcon icon={faCalendarDay} className=""/> Corporate Actions
-                      <p className="productDescription"> Product description</p>
-
-                      </NavDropdown.Item>
-                    </LinkContainer>
-                  </div>
-                  
-                  
-                
-                  {/* <div className="dataCard">
+                    {/* <div className="dataCard">
                     <LinkContainer to="/product/black-litterman">
                       <NavDropdown.Item>Black Litterman</NavDropdown.Item>
                     </LinkContainer>
                   </div> */}
 
-                  <div className="dataCard">
-                    <LinkContainer to="/product/esg-sfdr-reporting">
-                      <NavDropdown.Item><FontAwesomeIcon icon={faLeaf} className=""/> ESG SFDR Reporting
-                      <p className="productDescription"> Product description</p>
-                      </NavDropdown.Item>
-                    </LinkContainer>
-                  </div>
-                  <div className="col">
+                    <div className="dataCard">
+                      <LinkContainer to="/product/esg-sfdr-reporting">
+                        <NavDropdown.Item>
+                          <FontAwesomeIcon icon={faLeaf} className="esrIcon" />{" "}
+                          <label className="labelStyle">
+                            ESG - SFDR Reporting
+                          </label>
+                          <p className="productDescription">
+                            {" "}
+                            Product description
+                          </p>
+                        </NavDropdown.Item>
+                      </LinkContainer>
+                    </div>
+                    <div className="col">
+                      <div className="dataCard">
+                        <LinkContainer to="/product/competitive-analysis">
+                          <NavDropdown.Item>
+                            <FontAwesomeIcon
+                              icon={faChartBar}
+                              className="canIcon"
+                            />{" "}
+                            <label className="labelStyle">
+                              Competitive Analysis
+                            </label>
+                            <p className="productDescription">
+                              {" "}
+                              Product description
+                            </p>
+                          </NavDropdown.Item>
+                        </LinkContainer>
+                      </div>
+                    </div>
 
-                  <div className="dataCard">
-                    <LinkContainer to="/product/competitive-analysis">
-                      <NavDropdown.Item><FontAwesomeIcon icon={faChartBar} className=""/> Competitive Analysis <p className="productDescription"> Product description</p></NavDropdown.Item>
-                    </LinkContainer>
-                  </div>
-                  </div>
-                  <div className="dataCard">
-                    <LinkContainer to="/products">
-                      <NavDropdown.Item>See all..</NavDropdown.Item>
-                    </LinkContainer>
+                    <div className="seeAll">
+                      <LinkContainer to="/products" className="seeAllLink">
+                        <NavDropdown.Item>
+                         <p className="labelStyleSeeAll">see all  {""}
+                          <FontAwesomeIcon
+                            icon={faArrowRight}
+                            className="seeAllIcon"
+                          />
+                          </p>
+
+                        </NavDropdown.Item>
+                      </LinkContainer>
                     </div>
                   </div>
                 </NavDropdown>
@@ -144,12 +222,19 @@ const Header = () => {
               </NavLink>
 
               <NavLink className="navLinkContactStyle">
-                <LinkContainer to="/contactus" className="badge rounded-pill navLinkCustomedContact">
-                  <Nav.Link>Get in touch <FontAwesomeIcon icon={faArrowRight} className="arrowRightStyle"/></Nav.Link> 
-                </LinkContainer> 
+                <LinkContainer
+                  to="/contactus"
+                  className="badge rounded-pill navLinkCustomedContact"
+                >
+                  <Nav.Link>
+                    Get in touch{" "}
+                    <FontAwesomeIcon
+                      icon={faArrowRight}
+                      className="arrowRightStyle"
+                    />
+                  </Nav.Link>
+                </LinkContainer>
               </NavLink>
-
-              
             </Nav>
           </Navbar.Collapse>
         </Container>
