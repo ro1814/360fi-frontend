@@ -46,7 +46,7 @@
         border: 0;
     }
 
-    .dataCard :hover{
+    .dataCard :hover {
         background: #63C9FF !important;
         border-radius: 25px;
     }
@@ -106,7 +106,8 @@
         margin-right: 10px;
         font-size: 25px;
     }
-    .esrIcon{
+
+    .esrIcon {
         color: #00A881;
         margin-right: 10px;
         font-size: 25px;
@@ -118,34 +119,39 @@
         margin-right: 10px;
         font-size: 25px;
     }
-    .seeAllLink{
-        text-decoration:underline !important;
+
+    .seeAllLink {
+        text-decoration: underline !important;
     }
+
     .seeAllIcon {
         color: #00689E;
         margin-right: 10px;
     }
 
-    .labelStyle{
-        font-weight:bold;
-        color: #004E77 ;
+    .labelStyle {
+        font-weight: bold;
+        color: #004E77;
     }
-    .seeAll{
+
+    .seeAll {
         text-align: end !important;
     }
 
-    div .seeAll *:hover{
+    div .seeAll *:hover {
         background: none;
     }
 
-     .seeAll .dropdown-item.active, .dropdown-item:active {
+    .seeAll .dropdown-item.active,
+    .dropdown-item:active {
         background: transparent !important;
         color: #004E77 !important;
     }
-    .dataCard .dropdown-item :hover{
+
+    .dataCard .dropdown-item :hover {
         background-color: transparent !important;
     }
-    
+
 }
 
 
@@ -260,24 +266,80 @@
     }
 
     .dropdown-item {
-        white-space: inherit !important;
-        display: flex !important;
-        flex: content !important;
+        padding: 0.25rem 2rem !important;
+        font-weight: bold !important;
+        display: inline !important;
+        flex-direction: row !important;
         color: white !important;
         width: auto !important;
 
     }
 
+    .dbIcon {
+        display: none;
+    }
+
+    .vfmIcon {
+        display: none;
+    }
+
+    .blpIcon {
+        display: none;
+    }
+
+    .miIcon {
+        display: none;
+    }
+
+    .eeIcon {
+        display: none;
+    }
+
+    .caIcon {
+        display: none;
+    }
+
+    .esrIcon {
+        display: none;
+    }
+
+    .canIcon {
+        display: none;
+    }
+
+    .seeAll {
+        
+        padding: 0.35em 0.65em;
+        display: block !important;
+        border-radius: 50rem !important;
+        background-color: #00689E !important;
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .labelStyleSeeAll {
+        margin: 0;
+        text-align: center;
+    }
+
+    .seeAllLink {
+        text-decoration: underline !important;
+        width: 100%;
+    }
+    .labelStyle{
+        font-size:14px;
+    }
+    .productDescription{
+        font-size: 10px;
+    }
+
     .dropdown-item.active,
     .dropdown-item:active {
         background-color: transparent !important;
-        white-space: none !important;
-        display: contents !important;
     }
 
     .badge {
         display: block !important;
-        line-height: 2 !important;
         background-color: #00689E !important;
 
     }

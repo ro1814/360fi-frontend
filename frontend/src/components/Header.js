@@ -153,22 +153,25 @@ const Header = () => {
                       <NavDropdown.Item>Black Litterman</NavDropdown.Item>
                     </LinkContainer>
                   </div> */}
-
-                    <div className="dataCard">
-                      <LinkContainer to="/product/esg-sfdr-reporting">
-                        <NavDropdown.Item>
-                          <FontAwesomeIcon icon={faLeaf} className="esrIcon" />{" "}
-                          <label className="labelStyle">
-                            ESG - SFDR Reporting
-                          </label>
-                          <p className="productDescription">
-                            {" "}
-                            Product description
-                          </p>
-                        </NavDropdown.Item>
-                      </LinkContainer>
-                    </div>
                     <div className="col">
+                      <div className="dataCard">
+                        <LinkContainer to="/product/esg-sfdr-reporting">
+                          <NavDropdown.Item>
+                            <FontAwesomeIcon
+                              icon={faLeaf}
+                              className="esrIcon"
+                            />{" "}
+                            <label className="labelStyle">
+                              ESG - SFDR Reporting
+                            </label>
+                            <p className="productDescription">
+                              {" "}
+                              Product description
+                            </p>
+                          </NavDropdown.Item>
+                        </LinkContainer>
+                      </div>
+
                       <div className="dataCard">
                         <LinkContainer to="/product/competitive-analysis">
                           <NavDropdown.Item>
@@ -179,28 +182,26 @@ const Header = () => {
                             <label className="labelStyle">
                               Competitive Analysis
                             </label>
-                            <p className="productDescription">
-                              {" "}
-                              Product description
+                            <p className="productDescription">Product description</p>
+                          </NavDropdown.Item>
+                        </LinkContainer>
+                      </div>
+
+                      
+                    </div>
+                    <div className="seeAll">
+                        <LinkContainer to="/products" className="seeAllLink">
+                          <NavDropdown.Item>
+                            <p className="labelStyleSeeAll">
+                              see all {""}
+                              <FontAwesomeIcon
+                                icon={faArrowRight}
+                                className="seeAllIcon"
+                              />
                             </p>
                           </NavDropdown.Item>
                         </LinkContainer>
                       </div>
-                    </div>
-
-                    <div className="seeAll">
-                      <LinkContainer to="/products" className="seeAllLink">
-                        <NavDropdown.Item>
-                         <p className="labelStyleSeeAll">see all  {""}
-                          <FontAwesomeIcon
-                            icon={faArrowRight}
-                            className="seeAllIcon"
-                          />
-                          </p>
-
-                        </NavDropdown.Item>
-                      </LinkContainer>
-                    </div>
                   </div>
                 </NavDropdown>
               </NavLink>
