@@ -30,11 +30,11 @@ const Header = () => {
 
           <Navbar.Toggle
             aria-controls="responsive-navbar-nav"
-            className="navLinkCustomed"
+            className="navLinkCustomed "
           />
           <Navbar.Collapse
             id="responsive-navbar-nav"
-            className="navLinkCustomed"
+            className="navLinkCustomed "
           >
             <Nav className="me-auto navLinkCustomed">
               <NavLink className="navLinkHomeStyle">
@@ -42,6 +42,7 @@ const Header = () => {
                   <Nav.Link>Home</Nav.Link>
                 </LinkContainer>
               </NavLink>
+
               <NavLink className="navLinkProductsStyle">
                 <NavDropdown
                   title="Products"

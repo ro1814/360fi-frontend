@@ -1,0 +1,60 @@
+.divTitle {
+    width:10%; /*full width*/
+    min-height:90%;
+    text-align:center;
+    display:table;
+    margin-top: 2%;
+    margin-left: 15%;
+    margin-bottom: 5%;
+}
+
+.homeTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    color: #004E77;
+    text-align: justify;
+    font-size: 450%;
+    margin:0;
+    padding:0;
+}
+
+.aboutDiv{
+    display: flex;
+    flex-direction:column;
+    margin-top: 9%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 5%;
+}
+
+.aboutUsTitle{
+    font-size: 32px;
+    margin-bottom: 2%;
+    font-weight: bold;
+}
+
+.aboutUsParagraph{
+    font-size: 24px;
+    text-align: justify;
+}
+
+.whatWeDoDiv{
+    display: flex;
+    flex-direction:column;
+    margin-top: 9%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 5%;
+}
+.title{
+    color: #004E77;
+    font-size: 40px;
+    margin-bottom: 2%;
+    font-weight: bolder;
+    text-align: center;
+}
+.whatWeDoParagraph{
+    font-size: 24px;
+    text-align: justify;
+
+}

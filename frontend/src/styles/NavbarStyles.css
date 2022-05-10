@@ -30,6 +30,7 @@
     .dropdown-menu.show {
         display: flex !important;
         flex-direction: row !important;
+        
     }
 
     .dropdown-item {
