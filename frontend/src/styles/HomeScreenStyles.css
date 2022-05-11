@@ -44,7 +44,7 @@
     margin-top: 9%;
     margin-left: 20%;
     margin-right: 20%;
-    margin-bottom: 5%;
+    margin-bottom: 1%;
 }
 .title{
     color: #004E77;
@@ -57,4 +57,36 @@
     font-size: 24px;
     text-align: justify;
 
+}
+
+.whatWeDoDivInfo{
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    margin-top: 25px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 5%;
+}
+.whatDoweDoInfo {
+    background-color: #CBEDFF;
+    width: 33%;
+    margin-top: 10px;
+    margin-right: 25px;
+    margin-left: 19px;
+    padding: 20px;
+
+}
+.whatDoWeDoTitle{
+    font-size: 22px;
+    margin-bottom: 2%;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.whatDoWeDonfoParagraph{
+    font-size: 20px;
+    text-align: justify;
+    font-weight: bold;
+    
 }

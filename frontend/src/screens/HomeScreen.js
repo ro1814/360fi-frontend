@@ -23,7 +23,6 @@ export const HomeScreen = () => {
           processes.
         </p>
       </div>
-
       <div className="whatWeDoDiv">
         <h1 className="title"> What we do</h1>
         <p className="whatWeDoParagraph">
@@ -31,6 +30,41 @@ export const HomeScreen = () => {
           fund selection and operations in order to create a suite of products
           and services by fund professionals for fund professionals.
         </p>
+      </div>
+      <div className="whatWeDoDivInfo">
+
+        <div className="whatDoweDoInfo shadow p-3 mb-5 rounded hover-overlay">
+        <h1 className="whatDoWeDoTitle"> COMPREHENSIVE DATA</h1>
+        <p className="whatDoWeDoInfoParagraph">
+          Reliable UCITs fund data that is independently audited for accuracy so
+          you can confidently make investment decisions.{" "}
+        </p>
+        </div>
+
+        <div className="whatDoweDoInfo shadow p-3 mb-5 rounded">
+        <h1 className="whatDoWeDoTitle">INVESTMENT ANALYTICS</h1>
+        <p className="whatDoWeDoInfoParagraph">
+        Tools for help you identify quality investments that deliver value for money, monitor day-today and comply with best execution
+        </p>
+        </div>
+        <div className="whatDoweDoInfo shadow p-3 mb-5 rounded">
+        <h1 className="whatDoWeDoTitle">ADAPTABLE SOLUTIONS</h1>
+        <p className="whatDoWeDoInfoParagraph">
+        Bespoke governance and advisory solutions to empower your business and unlock efficiency gains
+        </p>
+        </div>
+      </div>
+
+      <div>
+        <div>
+        <image></image>
+        </div>
+        <div>
+        <image></image>
+        </div>
+        <div>
+        <image></image>
+        </div>
       </div>
     </>
   );
