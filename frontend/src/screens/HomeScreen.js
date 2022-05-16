@@ -9,8 +9,8 @@ export const HomeScreen = () => {
         <div className="divTitle">
           <h1 className="homeTitle">Research Governance Solutions</h1>
         </div>
-        <div className="aboutDiv shadow p-3 mb-5 bg-white rounded">
-          <h1 className="aboutUsTitle"> ABOUT US</h1>
+        <div className="aboutDiv shadow mb-5 rounded">
+          <h1 className="title"> About Us</h1>
           <p className="aboutUsParagraph">
             360 Fund Insight Limited is an FCA regulated firm providing truly
             independent, completely transparent, and efficient investment
@@ -28,7 +28,7 @@ export const HomeScreen = () => {
       </div>
 
       <div className="whatWeDoDiv">
-        <h1 className="title"> What we do</h1>
+        <h1 className="title"> What We Do</h1>
         <p className="whatWeDoParagraph">
           Our FundsFairwayTM platform combines over 200 years of experience in
           fund selection and operations in order to create a suite of products
@@ -61,34 +61,34 @@ export const HomeScreen = () => {
       </div>
 
       <div className="threeLogosDiv shadow p-1 mb-5 rounded">
-        <div className="divLogo">
-          <img
-            className="fFLogo"
-            src="/images/logos/fundsfairwayStatic.svg"
-            alt="Funds Fairway Logo"
+
+      <img
+            className="eELogo"
+            src="/images/logos/EagleEyeBiggerLogo.svg"
+            alt="Eagle Eye Logo"
           ></img>
-        </div>
-        <div className="divLogo">
+          
+
+          
           <img
             className="bILogo"
             src="/images/logos/360BusinessInteligence.svg"
             alt="Business Intelligence Logo"
           ></img>
-        </div>
 
-        <div className="divLogo">
-          <img
-            className="eELogo"
-            src="/images/logos/EagleEyeBiggerLogo.svg"
-            alt="Eagle Eye Logo"
+<img
+            className="fFLogo"
+            src="/images/logos/fundsfairwayStatic.svg"
+            alt="Funds Fairway Logo"
           ></img>
-        </div>
-      </div>
 
+          
+      </div>
       <h1 className="wDwHtitle">Who do we help?</h1>
+
       <div className="whoDoWeHelp  shadow p-3 mb-5 rounded">
         <h2 className="subTitle">
-          Financial Advisers, Wealth Managers and DFMs:
+          FINANCIAL ADVISERS, WEALTH MANAGERS AND DFM's
         </h2>
         <p className="howDoWeHelpfoParagraph">
           Through FundsFairway we offer accurate data feeds, ongoing governance,
@@ -158,20 +158,16 @@ export const HomeScreen = () => {
 
           <div className="distributorsLinkBox">
             <div className="distributorsLinks">
-            <LinkContainer to="/product/data-feed">
+              <LinkContainer to="/product/data-feed">
                 <label className="labelStylewDwHLinks"> Data Feed </label>
               </LinkContainer>
 
               <LinkContainer to="/product/esg-sfdr-reporting">
-                <label className="labelStylewDwHLinks">
-                  SFDR Reporting
-                </label>
+                <label className="labelStylewDwHLinks">SFDR Reporting</label>
               </LinkContainer>
-              
             </div>
 
             <div className="distributorsLinks">
-              
               <LinkContainer to="/product/eagle-eye">
                 <label className="labelStylewDwHLinks">Eagle Eye</label>
               </LinkContainer>
@@ -180,12 +176,35 @@ export const HomeScreen = () => {
                 <label className="labelStylewDwHLinks">Corporate Actions</label>
               </LinkContainer>
             </div>
-            </div>
-
-
-          
-            </div>
           </div>
+        </div>
+      </div>
+
+      <h1 className="title">Clients Include</h1>
+
+      <div className="clientsDiv shadow p-3 mb-5 rounded">
+          <img className="southHallLogo" src="/images/img-punter-southall.svg" alt="Punter Southall Logo"></img>
+          <img
+            className="inversisLogo"
+            src="/images/img-inversis.svg"
+            alt="Iversis Logo"
+          ></img>
+      </div>
+
+      <h1 className="title"> Our Clients Testimonials</h1>
+
+
+      <div className="oCsBox shadow p-3 mb-5 rounded">
+        <div className="oCsSubDiv shadow p-3 rounded">
+          <h1 className="subTitle">PUNTER SOUTHALL GROUP</h1>
+          <p className="ourClientSayParagraphs">Through 360 Fund Insight’s Eagle Eye TM tool Punter Southall Group can meet their business objectives with our robust cost and charges data and proprietary target market database.</p>
+        </div>
+        <div className="oCsSubDiv shadow p-3 rounded">
+          <h1 className="subTitle">INVERSIS</h1>
+          <p className="ourClientSayParagraphs">360 Fund Insight provides a governed data solution tailored to empowering their operational infrastructure. Our data quality has led to significant reductions in costs and improved operational efficiencies.</p>
+        </div>
+      </div>
+      
     </>
   );
 };
