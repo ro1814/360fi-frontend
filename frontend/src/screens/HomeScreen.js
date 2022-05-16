@@ -142,7 +142,7 @@ export const HomeScreen = () => {
           </div>
         </div>
 
-        <div className="wDwHSubDivDistributors shadow p-3 mb-5 rounded">
+        <div className="wDwHSubDivDistributors shadow p-3 rounded">
           <div className="assetManagerSubDiv">
             <h1 className="subTitle">DISTRIBUTORS</h1>
             <p className="wDwHsubParagraphs">

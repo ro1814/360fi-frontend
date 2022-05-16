@@ -185,6 +185,7 @@
 .wDwHBox {
     display: flex;
     flex-direction: row;
+    margin-bottom: 3%;
 }
 
 .wDwHSubDiv {
@@ -260,6 +261,7 @@
     flex-direction: row;
     width: 60%;
     margin-left: 20%;
+    margin-bottom: 3%;
 }
 
 .ourClientSayParagraphs {
@@ -413,6 +415,8 @@
         text-align: justify;
     }
     .wDwHLinksDiv {
+        display: flex;
+        flex-direction: column;
         text-align: center;
     }
     .labelStylewDwHLinks {
