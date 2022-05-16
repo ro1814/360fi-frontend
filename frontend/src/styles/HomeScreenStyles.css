@@ -156,8 +156,6 @@
 .fFLogo {
     width: 12%;
     margin-top: -1%;
-    /* margin-left: 15%;
-    margin-right: 15%; */
 }
 
 .bILogo {
@@ -352,19 +350,147 @@
         display: flex;
         flex-direction: column;
         background-color: transparent;
-        margin-top: 3%;
+        margin-top: 1%;
         margin-left: 5%;
-        margin-right: 5%;
-        margin-bottom: 3%;
+        margin-right: 2%;
+        margin-bottom: 1%;
     }
     
     .whatDoweDoInfo {
         background-color: #CBEDFF;
-        width: 33%;
-        margin-top: 10px;
-        margin-right: 25px;
-        margin-left: 19px;
-        padding: 20px;
+        width: 120%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-right: 5%;
+        margin-left: 5%;    
+    }
+    .whatDoWeDoTitle {
+        font-size: 16px;
+        margin-bottom: 2%;
+        font-weight: bolder;
+        text-align: center;
+    }
+    .whatDoWeDoInfoParagraph {
+        font-size: 14px;
+        text-align: justify;
+    }
+    .threeLogosDiv {
+        display: flex;
+        flex-direction: row;
+        background-color: #e5f5df;
+        width: 96%;
+        margin-top: 2%;
+        margin-left: 2%;
+        margin-right: 0;
+        margin-bottom: 5%;
+    }
+
+    .wDwHtitle {
+        color: #004E77;
+        font-size: 22px;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .whoDoWeHelp {
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+        margin-top: 2%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 2%;
+        border-top: none;
+    }
+    .subTitle {
+        font-size: 18px;
+        margin-bottom: 1%;
+        font-weight: bold;
+        text-align: center;
+    }
+    .howDoWeHelpfoParagraph {
+        font-size: 16px;
+        text-align: justify;
+    }
+    .wDwHLinksDiv {
+        text-align: center;
+    }
+    .labelStylewDwHLinks {
+        text-align: center;
+        text-decoration: underline;
+        color: #004E77;
+        margin-left: 10%;
+        margin-right: 2%;
+        cursor: pointer;
+    }
+    .wDwHBox {
+        display: flex;
+        flex-direction: column;
+    }
+    .wDwHSubDiv {
+        background-color: #CBEDFF;
+        width: 90%;
+        margin-top: 1%;
+        margin-right: 5%;
+        margin-left: 5%;
+        padding: 2%;
     
+    }
+    .wDwHsubParagraphs {
+        font-size: 16px;
+        text-align: justify;
+    }
+    .assetManagerLinks {
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+    }
+    .wDwHSubDivDistributors {
+        background-color: #e5f5df;
+        width: 90%;
+        margin-top: 3%;
+        margin-right: 5%;
+        margin-left: 5%;
+        padding: 2%;
+    }
+    .distributorsLinkBox {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        }
+    .distributorsLinks {
+        width: 100%;
+        flex-direction: row;
+        font-size: 16px;
+        margin: 2%;
+    }
+    .clientsDiv {
+        display: flex;
+        flex-direction: row;
+        background-color: transparent;
+        width: 95%;
+        margin-top: 5%;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-bottom: 5%;
+    }
+    .oCsBox {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 5%;
+    }
+    .ourClientSayParagraphs {
+        font-size: 14px;
+        text-align: justify;
+    }
+    .oCsSubDiv {
+        background-color: #CBEDFF;
+        width: 95%;
+        margin-top: 1%;
+        margin-bottom: 3%;
+        margin-right: 2%;
+        margin-left: 3%;        
     }
 }

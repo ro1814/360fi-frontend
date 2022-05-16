@@ -9,7 +9,7 @@ export const HomeScreen = () => {
         <div className="divTitle">
           <h1 className="homeTitle">Research Governance Solutions</h1>
         </div>
-        <div className="aboutDiv shadow mb-5 rounded">
+        <div className="aboutDiv shadow mb-5 p-3  rounded">
           <h1 className="title"> About Us</h1>
           <p className="aboutUsParagraph">
             360 Fund Insight Limited is an FCA regulated firm providing truly
@@ -36,7 +36,7 @@ export const HomeScreen = () => {
         </p>
       </div>
       <div className="whatWeDoDivInfo">
-        <div className="whatDoweDoInfo shadow p-3 mb-5 rounded hover-overlay">
+        <div className="whatDoweDoInfo shadow p-3 rounded hover-overlay">
           <h1 className="whatDoWeDoTitle"> COMPREHENSIVE DATA</h1>
           <p className="whatDoWeDoInfoParagraph">
             Reliable UCITs fund data that is independently audited for accuracy
@@ -44,14 +44,14 @@ export const HomeScreen = () => {
           </p>
         </div>
 
-        <div className="whatDoweDoInfo shadow p-3 mb-5 rounded">
+        <div className="whatDoweDoInfo shadow rounded">
           <h1 className="whatDoWeDoTitle">INVESTMENT ANALYTICS</h1>
           <p className="whatDoWeDoInfoParagraph">
             Tools for help you identify quality investments that deliver value
             for money, monitor day-today and comply with best execution
           </p>
         </div>
-        <div className="whatDoweDoInfo shadow p-3 mb-5 rounded">
+        <div className="whatDoweDoInfo shadow rounded">
           <h1 className="whatDoWeDoTitle">ADAPTABLE SOLUTIONS</h1>
           <p className="whatDoWeDoInfoParagraph">
             Bespoke governance and advisory solutions to empower your business
@@ -60,7 +60,7 @@ export const HomeScreen = () => {
         </div>
       </div>
 
-      <div className="threeLogosDiv shadow p-1 mb-5 rounded">
+      <div className="threeLogosDiv shadow rounded">
 
       <img
             className="eELogo"
@@ -85,7 +85,6 @@ export const HomeScreen = () => {
           
       </div>
       <h1 className="wDwHtitle">Who do we help?</h1>
-
       <div className="whoDoWeHelp  shadow p-3 mb-5 rounded">
         <h2 className="subTitle">
           FINANCIAL ADVISERS, WEALTH MANAGERS AND DFM's
@@ -115,7 +114,7 @@ export const HomeScreen = () => {
         </div>
       </div>
       <div className="wDwHBox">
-        <div className="wDwHSubDiv shadow p-3 mb-5 rounded">
+        <div className="wDwHSubDiv shadow p-3 rounded">
           <div className="assetManagerSubDiv">
             <h1 className="subTitle">ASSET MANAGERS</h1>
             <p className="wDwHsubParagraphs">
@@ -194,7 +193,7 @@ export const HomeScreen = () => {
       <h1 className="title"> Our Clients Testimonials</h1>
 
 
-      <div className="oCsBox shadow p-3 mb-5 rounded">
+      <div className="oCsBox shadow p-3 rounded">
         <div className="oCsSubDiv shadow p-3 rounded">
           <h1 className="subTitle">PUNTER SOUTHALL GROUP</h1>
           <p className="ourClientSayParagraphs">Through 360 Fund Insight’s Eagle Eye TM tool Punter Southall Group can meet their business objectives with our robust cost and charges data and proprietary target market database.</p>
