@@ -1,6 +1,9 @@
 import React from "react";
 import {} from "../styles/HomeScreenStyles.css";
 import { LinkContainer } from "react-router-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import "../styles/NavbarStyles.css";
 
 export const HomeScreen = () => {
   return (
@@ -61,28 +64,23 @@ export const HomeScreen = () => {
       </div>
 
       <div className="threeLogosDiv shadow rounded">
+        <img
+          className="eELogo"
+          src="/images/logos/EagleEyeBiggerLogo.svg"
+          alt="Eagle Eye Logo"
+        ></img>
 
-      <img
-            className="eELogo"
-            src="/images/logos/EagleEyeBiggerLogo.svg"
-            alt="Eagle Eye Logo"
-          ></img>
-          
+        <img
+          className="bILogo"
+          src="/images/logos/360BusinessInteligence.svg"
+          alt="Business Intelligence Logo"
+        ></img>
 
-          
-          <img
-            className="bILogo"
-            src="/images/logos/360BusinessInteligence.svg"
-            alt="Business Intelligence Logo"
-          ></img>
-
-<img
-            className="fFLogo"
-            src="/images/logos/fundsfairwayStatic.svg"
-            alt="Funds Fairway Logo"
-          ></img>
-
-          
+        <img
+          className="fFLogo"
+          src="/images/logos/fundsfairwayStatic.svg"
+          alt="Funds Fairway Logo"
+        ></img>
       </div>
       <h1 className="wDwHtitle">Who do we help?</h1>
       <div className="whoDoWeHelp  shadow p-3 mb-5 rounded">
@@ -96,21 +94,28 @@ export const HomeScreen = () => {
           integrated dashboard.
         </p>
         <div className="wDwHLinksDiv">
-          <LinkContainer to="/product/eagle-eye">
-            <label className="labelStylewDwHLinks">Eagle Eye</label>
-          </LinkContainer>
+          <div className="distributorsLinks">
+            <LinkContainer to="/product/eagle-eye">
+              <label className="labelStylewDwHLinksFirst">Eagle Eye</label>
+            </LinkContainer>
 
-          <LinkContainer to="/product/corporate-actions">
-            <label className="labelStylewDwHLinks">Corporate Actions</label>
-          </LinkContainer>
+            <LinkContainer to="/product/corporate-actions">
+              <label className="labelStylewDwHLinksSecond ">
+                Corporate Actions
+              </label>
+            </LinkContainer>
+          </div>
+          <div className="distributorsLinks">
+            <LinkContainer to="/product/value-for-money">
+              <label className="labelStylewDwHLinksFirst  ">
+                Value for Money
+              </label>
+            </LinkContainer>
 
-          <LinkContainer to="/product/value-for-money">
-            <label className="labelStylewDwHLinks">Value for Money</label>
-          </LinkContainer>
-
-          <LinkContainer to="/product/black-litterman">
-            <label className="labelStylewDwHLinks">Black-Litterman</label>
-          </LinkContainer>
+            <LinkContainer to="/product/black-litterman">
+              <label className="labelStylewDwHLinksLast ">Black-Litterman</label>
+            </LinkContainer>
+          </div>
         </div>
       </div>
       <div className="wDwHBox">
@@ -182,28 +187,61 @@ export const HomeScreen = () => {
       <h1 className="title">Clients Include</h1>
 
       <div className="clientsDiv shadow p-3 mb-5 rounded">
-          <img className="southHallLogo" src="/images/img-punter-southall.svg" alt="Punter Southall Logo"></img>
-          <img
-            className="inversisLogo"
-            src="/images/img-inversis.svg"
-            alt="Iversis Logo"
-          ></img>
+        <img
+          className="southHallLogo"
+          src="/images/img-punter-southall.svg"
+          alt="Punter Southall Logo"
+        ></img>
+        <img
+          className="inversisLogo"
+          src="/images/img-inversis.svg"
+          alt="Iversis Logo"
+        ></img>
       </div>
 
-      <h1 className="title"> Our Clients Testimonials</h1>
-
+      <h1 className="title"> Get Started with 360 Fund Insight Today</h1>
 
       <div className="oCsBox shadow p-3 rounded">
         <div className="oCsSubDiv shadow p-3 rounded">
-          <h1 className="subTitle">PUNTER SOUTHALL GROUP</h1>
-          <p className="ourClientSayParagraphs">Through 360 Fund Insight’s Eagle Eye TM tool Punter Southall Group can meet their business objectives with our robust cost and charges data and proprietary target market database.</p>
+          <h1 className="subTitle">Arrange Demo</h1>
+          <p className="promStyles">
+            Book a call to find out how we can help your business
+          </p>
+          <div className="contactUsDivHS">
+          <div className="getInTouchButton m-3 p-2 rounded-pill">
+                        <LinkContainer to="/contactus">
+                            <p className="labelStyleSeeAllProducts">
+                            Get in touch {""}
+                              <FontAwesomeIcon
+                                icon={faArrowRight}
+                                className="arrowRightStyle"
+                              />
+                            </p>
+                        </LinkContainer>
+                      </div>
+          </div>
         </div>
-        <div className="oCsSubDiv shadow p-3 rounded">
-          <h1 className="subTitle">INVERSIS</h1>
-          <p className="ourClientSayParagraphs">360 Fund Insight provides a governed data solution tailored to empowering their operational infrastructure. Our data quality has led to significant reductions in costs and improved operational efficiencies.</p>
+        <div className="oCsSubDivTwo shadow p-3 rounded">
+          <h1 className="subTitle">Explore our Products</h1>
+          <p className="promStyles">
+            Discover our products and how it can help transform your business
+          </p>
+            
+          <div className="seeAllProducts m-3 p-2 rounded-pill">
+                        <LinkContainer to="/products" className="toPoint">
+                            <p className="labelStyleSeeAllProducts">
+                              Products Overview {""}
+                              <FontAwesomeIcon
+                                icon={faArrowRight}
+                                className="arrowRightStyle"
+                              />
+                            </p>
+                        </LinkContainer>
+                      </div>
+
         </div>
+        
       </div>
-      
     </>
   );
 };
