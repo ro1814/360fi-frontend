@@ -1,0 +1,122 @@
+.firstEeDiv {
+    margin: 1%;
+}
+
+.eELogoDiv {
+    width: 100%;
+    margin-bottom: 4%;
+}
+
+.eElogo {
+    margin-left: 30%;
+    width: 40%;
+}
+
+.eETextFirstDiv {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 2.5%;
+}
+
+.eETitle {
+    font-size: 26px;
+    text-align: center;
+    color: #004E77;
+}
+
+.eESubtitle {
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 24px;
+    text-align: justify;
+    color: #00344F;
+}
+
+.threeDivQuotes {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 3%;
+
+}
+
+.eEquote {
+    background-color: #CBEDFF;
+    margin-top: 3%;
+    margin-bottom: 1.5%;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding: 3%;
+    align-content: center;
+
+}
+
+.quote {
+    font-size: 34px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.eETextSecondDiv {
+    margin-left: 13%;
+    margin-right: 13%;
+    margin-bottom: 3%;
+}
+
+.firstDivParagraph {
+    text-align: justify;
+    font-weight: bold;
+    font-size: 22px;
+
+}
+
+.secondEeDiv {
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: rgba(0, 0, 0, 0.050);
+    margin-bottom: 1%;
+    padding-bottom: 1%;
+}
+
+.title {
+    color: #004E77;
+    font-size: 50px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 1%;
+}
+
+.eEdataflow {
+    width: 75%;
+    margin-left: 12%;
+    margin-bottom: 2%;
+}
+
+.hEworksDiv {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.hEworkSubTitle {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.hEworksUl {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 1%;
+
+}
+
+.hEworksIl {
+    margin-bottom: 1%;
+
+}
+.fFrictDiv{
+    margin: 1%;
+}

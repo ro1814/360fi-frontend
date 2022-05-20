@@ -205,8 +205,9 @@ export const HomeScreen = () => {
         <div className="oCsSubDiv shadow p-3 rounded">
           <h1 className="subTitle">Arrange Demo</h1>
           <p className="promStyles">
-            Book a call to find out how we can help your business
+            Book a call to find out how we can help transform your business
           </p>
+          
           <div className="contactUsDivHS">
           <div className="getInTouchButton m-3 p-2 rounded-pill">
                         <LinkContainer to="/contactus">
