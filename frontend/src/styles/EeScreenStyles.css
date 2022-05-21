@@ -1,5 +1,8 @@
 .firstEeDiv {
-    margin: 1%;
+    background-image: url(../../public/images/background-eagle-eye.svg);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
 }
 
 .eELogoDiv {
@@ -8,6 +11,7 @@
 }
 
 .eElogo {
+    margin-top: 2%;
     margin-left: 30%;
     width: 40%;
 }
@@ -117,6 +121,69 @@
     margin-bottom: 1%;
 
 }
-.fFrictDiv{
+
+.fFrictDiv {
     margin: 1%;
+}
+
+.keyFiguresDiv{
+    background-color: #CBEDFF;
+}
+.firstDataDiv{
+    display: flex;
+    flex-direction: row;
+}
+.littleDataCards{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 8%;
+
+}
+.littleDataCard{
+display: flex;
+flex-direction: row;
+margin-bottom: 10%;
+}
+.aMDataCard{
+    display: flex;
+    flex-direction: column;
+    margin-right: 40%;
+}
+.dataCardTitle{
+    font-size: 32px;
+    font-weight: bold;
+    text-align: right;
+    width: 160%;
+
+}
+.dataCardP{
+    font-size:16px;
+    font-weight: bolder;
+    text-align:right;
+    width: 160%;
+}
+
+.aMicon{
+font-size: 40px;
+margin-top: 10%;
+margin-left: 5%;
+}
+.customCard{
+    background-color: rgba(245, 245, 245, 0.862);
+    margin-right: 10%;
+}
+.customCardTitle{
+    margin-top: 2%;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+.customCardP{
+    font-weight: bold;
+    text-align: justify;
+    font-size: 20px;
+    margin-left: 2%;
+    margin-right: 2%
+
 }
