@@ -128,27 +128,31 @@
 
 .keyFiguresDiv{
     background-color: #CBEDFF;
+    padding-bottom: 1%;
 }
 .firstDataDiv{
     display: flex;
     flex-direction: row;
+    margin-right: 12%;
+    margin-top: 5%;
+    margin-bottom: 2%;
 }
 .littleDataCards{
     display: flex;
     flex-direction: column;
-    margin-left: 5%;
+    margin-left: 10%;
     margin-right: 8%;
 
 }
 .littleDataCard{
 display: flex;
 flex-direction: row;
-margin-bottom: 10%;
+margin-bottom: 15%;
 }
 .aMDataCard{
     display: flex;
     flex-direction: column;
-    margin-right: 40%;
+    margin-right: 50%;
 }
 .dataCardTitle{
     font-size: 32px;
@@ -168,10 +172,12 @@ margin-bottom: 10%;
 font-size: 40px;
 margin-top: 10%;
 margin-left: 5%;
+color: #00344F;
 }
 .customCard{
     background-color: rgba(245, 245, 245, 0.862);
-    margin-right: 10%;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 .customCardTitle{
     margin-top: 2%;
@@ -183,7 +189,8 @@ margin-left: 5%;
     font-weight: bold;
     text-align: justify;
     font-size: 20px;
-    margin-left: 2%;
-    margin-right: 2%
+    margin-left: 5%;
+    margin-right: 5%
 
 }
+

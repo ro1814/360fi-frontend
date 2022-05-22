@@ -1,17 +1,9 @@
 import React from "react";
 import {} from "../../styles/EeScreenStyles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faArrowRight,
-  faDatabase,
-  faChartLine,
-  faChartPie,
-  faEye,
-  faCalendarDay,
-  faLeaf,
-  faChartBar,
-  faLightbulb,
-} from "@fortawesome/free-solid-svg-icons";
+import { faChartPie, faChartBar } from "@fortawesome/free-solid-svg-icons";
+
+import { faListAlt } from "@fortawesome/free-regular-svg-icons";
 
 const EagleEyeComponent = () => {
   return (
@@ -118,45 +110,74 @@ const EagleEyeComponent = () => {
 
         <div className="firstDataDiv">
           <div className="littleDataCards">
-            
-          <div className="littleDataCard">
-            <div className="aMDataCard">
-              <h1 className="dataCardTitle">400+</h1>
-              <p className="dataCardP">Asset Managers</p>
+            <div className="littleDataCard">
+              <div className="aMDataCard">
+                <h1 className="dataCardTitle">400+</h1>
+                <p className="dataCardP">Asset Managers</p>
+              </div>
+              <FontAwesomeIcon icon={faChartBar} className="aMicon" />
             </div>
-            <FontAwesomeIcon
-                              icon={faChartBar}
-                              className="aMicon"
-                            />
-          </div>
 
-          <div className="littleDataCard">
-            <div className="aMDataCard">
-              <h1 className="dataCardTitle">30K+</h1>
-              <p className="dataCardP">UCITS Funds</p>
+            <div className="littleDataCard">
+              <div className="aMDataCard">
+                <h1 className="dataCardTitle">30K+</h1>
+                <p className="dataCardP">UCITS Funds</p>
+              </div>
+              <FontAwesomeIcon icon={faChartPie} className="aMicon" />
             </div>
-            <FontAwesomeIcon
-                            icon={faChartPie}
-                            className="aMicon"
-                          />
-          </div>
-
-          
-
           </div>
           <div className="customCard shadow rounded">
             <h1 className="customCardTitle">CUSTOMISABLE</h1>
-            <p className="customCardP">Share class analysis for every client type, complying with MIFID II regulation based on: Target Market, Business Model, Investment Amount.</p>
+            <p className="customCardP">
+              Share class analysis for every client type, complying with MIFID
+              II regulation based on: Target Market, Business Model, Investment
+              Amount.
+            </p>
           </div>
 
           <div className="customCard shadow roundedº">
             <h1 className="customCardTitle">CLASS LEADING ACCURACY</h1>
-            <p className="customCardP">Independently governed static, legal, operation and costs and charges data to ensure full compliance with best execution.</p>
+            <p className="customCardP">
+              Independently governed static, legal, operation and costs and
+              charges data to ensure full compliance with best execution.
+            </p>
           </div>
         </div>
 
+
+        <div className="firstDataDiv">
+          <div className="littleDataCards">
+            <div className="littleDataCard">
+              <div className="aMDataCard">
+                <h1 className="dataCardTitle">130K+</h1>
+                <p className="dataCardP">Share Classes</p>
+              </div>
+              <FontAwesomeIcon icon={faListAlt} className="aMicon" />
+            </div>
+
+            <div className="littleDataCard">
+              <div className="aMDataCard">
+                <h1 className="dataCardTitle">250K+</h1>
+                <p className="dataCardP">Data per ISIN</p>
+              </div>
+              <FontAwesomeIcon icon={faChartPie} className="aMicon" />
+            </div>
+          </div>
+          <div className="customCard shadow rounded">
+            <h1 className="customCardTitle">COMPLETE UNIVERSE</h1>
+            <p className="customCardP">
+            Proprietary Eagle Eye Database with over 120,000+ ISINs to independently assess all available share classes.
+            </p>
+          </div>
+
+          <div className="customCard shadow roundedº">
+            <h1 className="customCardTitle">CLASS LEADING ACCURACY</h1>
+            <p className="customCardP">
+            Enabling compliance with ex-ante costs &amp; charges when selecting products, and ex-post requirements when reporting.
+            </p>
+          </div>
         </div>
-        
+      </div>
     </>
   );
 };
