@@ -141,13 +141,14 @@
     display: flex;
     flex-direction: column;
     margin-left: 10%;
-    margin-right: 8%;
+    margin-right: 10%;
 
 }
 .littleDataCard{
 display: flex;
 flex-direction: row;
 margin-bottom: 15%;
+width: 120%;
 }
 .aMDataCard{
     display: flex;
@@ -175,9 +176,10 @@ margin-left: 5%;
 color: #00344F;
 }
 .customCard{
+    width: 30%;
+    margin-right: 10%;
+    padding-top: 1%;
     background-color: rgba(245, 245, 245, 0.862);
-    margin-right: 5%;
-    margin-left: 5%;
 }
 .customCardTitle{
     margin-top: 2%;
@@ -190,7 +192,7 @@ color: #00344F;
     text-align: justify;
     font-size: 20px;
     margin-left: 5%;
-    margin-right: 5%
+    margin-right: 5%;
 
 }
 

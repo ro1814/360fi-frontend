@@ -1,9 +1,9 @@
 import React from "react";
 import {} from "../../styles/EeScreenStyles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChartPie, faChartBar } from "@fortawesome/free-solid-svg-icons";
+import { faChartPie, faChartBar, faSearch } from "@fortawesome/free-solid-svg-icons";
 
-import { faListAlt } from "@fortawesome/free-regular-svg-icons";
+import { faListAlt,  } from "@fortawesome/free-regular-svg-icons";
 
 const EagleEyeComponent = () => {
   return (
@@ -144,7 +144,6 @@ const EagleEyeComponent = () => {
           </div>
         </div>
 
-
         <div className="firstDataDiv">
           <div className="littleDataCards">
             <div className="littleDataCard">
@@ -160,7 +159,7 @@ const EagleEyeComponent = () => {
                 <h1 className="dataCardTitle">250K+</h1>
                 <p className="dataCardP">Data per ISIN</p>
               </div>
-              <FontAwesomeIcon icon={faChartPie} className="aMicon" />
+              <FontAwesomeIcon icon={faSearch} className="aMicon" />
             </div>
           </div>
           <div className="customCard shadow rounded">
@@ -170,7 +169,7 @@ const EagleEyeComponent = () => {
             </p>
           </div>
 
-          <div className="customCard shadow roundedº">
+          <div className="customCard  shadow roundedº">
             <h1 className="customCardTitle">CLASS LEADING ACCURACY</h1>
             <p className="customCardP">
             Enabling compliance with ex-ante costs &amp; charges when selecting products, and ex-post requirements when reporting.
