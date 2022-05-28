@@ -1,9 +1,13 @@
 import React from "react";
 import {} from "../../styles/EeScreenStyles.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChartPie, faChartBar, faSearch } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";import {
+  faChartPie,
+  faChartBar,
+  faSearch,
+} from "@fortawesome/free-solid-svg-icons";
 
-import { faListAlt,  } from "@fortawesome/free-regular-svg-icons";
+import { faListAlt } from "@fortawesome/free-regular-svg-icons";
+import { LinkContainer } from "react-router-bootstrap";
 
 const EagleEyeComponent = () => {
   return (
@@ -103,6 +107,13 @@ const EagleEyeComponent = () => {
             Product suitability through EPT data analysis to ensure products are
             aligned with investor’s appropriate risk level.
           </p>
+          <div className="videoDiv ">
+            <video
+              src="/videos/ee-vid.mp4"
+              className="eeVid shadow rounded"
+              controls
+            ></video>
+          </div>
         </div>
       </div>
       <div className="keyFiguresDiv">
@@ -135,7 +146,7 @@ const EagleEyeComponent = () => {
             </p>
           </div>
 
-          <div className="customCard shadow roundedº">
+          <div className="customCard shadow rounded">
             <h1 className="customCardTitle">CLASS LEADING ACCURACY</h1>
             <p className="customCardP">
               Independently governed static, legal, operation and costs and
@@ -165,17 +176,25 @@ const EagleEyeComponent = () => {
           <div className="customCard shadow rounded">
             <h1 className="customCardTitle">COMPLETE UNIVERSE</h1>
             <p className="customCardP">
-            Proprietary Eagle Eye Database with over 120,000+ ISINs to independently assess all available share classes.
+              Proprietary Eagle Eye Database with over 120,000+ ISINs to
+              independently assess all available share classes.
             </p>
           </div>
 
-          <div className="customCard  shadow roundedº">
+          <div className="customCard shadow rounded">
             <h1 className="customCardTitle">CLASS LEADING ACCURACY</h1>
             <p className="customCardP">
-            Enabling compliance with ex-ante costs &amp; charges when selecting products, and ex-post requirements when reporting.
+              Enabling compliance with ex-ante costs &amp; charges when
+              selecting products, and ex-post requirements when reporting.
             </p>
           </div>
         </div>
+      </div>
+      <div className="contactEeDiv shadow rounded">
+        <h1 className="title">Book your Demo</h1>
+        <LinkContainer to="/contactus">
+        <button className="btn rounded-pill contactBtnEe" type="">Get Started</button>
+        </LinkContainer>
       </div>
     </>
   );

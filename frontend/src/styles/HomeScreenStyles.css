@@ -343,7 +343,7 @@
 }
 
 /* Media Queries */
-
+/* Mobile Queries max 924px */
 @media (max-width: 924px) {
     .homeDiv {
         background-image: url(../../public/images/first-page-background.svg);
