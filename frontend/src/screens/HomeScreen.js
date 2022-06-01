@@ -184,7 +184,7 @@ export const HomeScreen = () => {
         </div>
       </div>
 
-      <h1 className="title">Clients Include</h1>
+      <h1 className="title">Clients Included</h1>
 
       <div className="clientsDiv shadow p-3 mb-5 rounded">
         <img

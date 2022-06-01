@@ -182,20 +182,7 @@ const MeetTheTeamScreen = () => {
             </div>
           </div>
 
-          <div className="col-xl-3 col-sm-6 mb-5">
-            <div className="bg-white rounded shadow-sm py-5 px-4">
-              <BioImagen
-                src="/images/meetusimages/FernandoVasconcellos.png"
-                alt="Fernando Vasconcellos (HOIS-Head Of IT Systems) "
-                width="100"
-                className="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
-              />
-              <BioName className="mb-0">Fernando Vasconcellos</BioName>
-              <span className="small text-uppercase text-muted">
-                Head Of IT Systems
-              </span>
-            </div>
-          </div>
+          
 
           <div className="col-xl-3 col-sm-6 mb-5">
             <div className="bg-white rounded shadow-sm py-5 px-4">
@@ -222,23 +209,7 @@ const MeetTheTeamScreen = () => {
               />
               <BioName className="mb-0">Fernando Zapata</BioName>
               <span className="small text-uppercase text-muted">
-                Head of Marketing and Communication
-              </span>
-            </div>
-          </div>
-
-          <div className="col-xl-3 col-sm-6 mb-5">
-            <div className="bg-white rounded shadow-sm py-5 px-4">
-              <BioImagen
-                src="/images/meetusimages/JorgeReque.png"
-                alt="Jorge Reque
-                (Data Governance. Product specialist Corporate Actions)"
-                width="100"
-                className="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
-              />
-              <BioName className="mb-0">Jorge Reque</BioName>
-              <span className="small text-uppercase text-muted">
-                Data Governance. Product specialist Corporate Actions
+                Head of Marketing
               </span>
             </div>
           </div>
@@ -284,8 +255,10 @@ const MeetTheTeamScreen = () => {
               />
               <BioName className="mb-0">Cristina Arranz</BioName>
               <span className="small text-uppercase text-muted">
-                Senior Investment Analyst
+                Senior Investment Data Analyst
+                
               </span>
+              
             </div>
           </div>
         </div>

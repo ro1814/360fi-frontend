@@ -15,7 +15,7 @@ const EagleEyeComponent = () => {
       <div className="firstEeDiv">
         <div className="eELogoDiv">
           <img
-            className="eElogo"
+            className="eElogo shadow rounded"
             src="/images/logos/eagle-eye-1.png"
             alt="Eagle Eye Logo"
           ></img>
@@ -61,9 +61,9 @@ const EagleEyeComponent = () => {
         </div>
       </div>
       <div className="secondEeDiv shadow rounded">
-        <h1 className="title">How does Eagle Eye® work?</h1>
+        <h1 className="title titleEdit">How does Eagle Eye <p className="rSize"> ®{ " " }</p> { " " } work?</h1>
         <img
-          className="eEdataflow shadow rounded"
+          className="eEdataflow"
           src="/images/EE_data_process_flow.svg"
           alt="Eagle Eye data process flow"
         ></img>
