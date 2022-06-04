@@ -21,7 +21,6 @@ import ValueForMoneyComponent from "./components/products/ValueForMoneyComponent
 import BlPortafoliosComponent from "./components/products/BlPortafoliosComponent";
 import MarketIntelligenceComponent from "./components/products/MarketIntelligenceComponent";
 
-import BlackLittermanComponent from "./components/products/BlackLittermanComponent";
 import EsgSfrdReportingComponent from "./components/products/EsgSfrdReportingComponent";
 import CompetitiveAnalysisComponent from "./components/products/CompetitiveAnalysisComponent";
 
@@ -41,7 +40,6 @@ function App() {
       <Route path="/product/value-for-money" component={ValueForMoneyComponent} />
       <Route path="/product/market-intelligence" component={MarketIntelligenceComponent} />
       <Route path="/product/bl-portafolios" component={BlPortafoliosComponent} />
-      <Route path="/product/black-litterman" component={BlackLittermanComponent} />
       <Route path="/product/esg-sfdr-reporting" component={EsgSfrdReportingComponent} />
       <Route path="/product/competitive-analysis" component={CompetitiveAnalysisComponent} />
 
