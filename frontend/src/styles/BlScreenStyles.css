@@ -1,17 +1,19 @@
-.firstDivBl{
+.firstDivBl {
     background-image: url(../../public/images/background-eagle-eye.svg);
     background-repeat: no-repeat;
     position: relative;
     background-size: cover;
 }
-.titleBL{
+
+.titleBL {
     padding-top: 3%;
     margin-top: 0;
     margin-right: 30%;
     margin-left: 30%;
     margin-bottom: 5%;
 }
-.firstP{
+
+.firstP {
     margin-right: 23%;
     margin-left: 23%;
     font-size: 22px;
@@ -20,23 +22,94 @@
     color: #004E77;
     font-weight: bold;
 }
-.twoCardsDiv{
+
+.twoCardsDiv {
     display: flex;
     flex-direction: row;
-    margin-bottom: 5%;
+    margin-bottom: 4.2%;
 }
-.cardBl{
+
+.cardBlOne {
     padding-top: 2%;
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-bottom: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 0.5%;
     background-color: #CBEDFF;
     margin-left: 15%;
-    margin-right: 10%;
-    margin-bottom: 8%;
+    margin-right: 5%;
+    margin-bottom: 10%;
+    position: relative;
 }
-.cardTitle{
+
+.cardBlTwo {
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 3%;
+    padding-bottom: 0.5%;
+    background-color: #CBEDFF;
+    margin-left: 3%;
+    margin-right: 15%;
+    margin-bottom: 10%;
+}
+
+.cardTitle {
     text-align: center;
-    font-size: 36px;
+    font-size: 34px;
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+
+.blPlusBtn {
+    text-align: center;
+    color: black;
+    padding-top: 8%;
+    margin-left: 40%;
+    height: 70%;
+    width: 20%;
+    background: #CBEDFF;
+    border-radius: 50%;
+}
+.blPlusBtn2{
+    text-align: center;
+    color: black;
+    padding-top: 10%;
+    margin-left: 35%;
+    height: 70%;
+    width: 25%;
+    background: #CBEDFF;
+    border-radius: 50%;
+    margin-bottom: 0;
+}
+
+.plusIcon {
+    text-align: center;
+    font-size: 40px;
+}
+
+.mptDiv{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4%;
+    margin-right: 3%;
+
+}
+.titleMpt{
+    margin-bottom: 5%;
+    
+}
+.mptDivOne{
+    margin-left: 5%;
+    margin-right: 3%;
+}
+.mptSubtitle{
+    font-size: 38px;
+    margin-bottom: 5%;
     font-weight: bolder;
 }
+.mptParagraph{
+    font-size: 26px;
+    text-align: justify;
+    hyphens: auto;
+    font-weight: bold;
+}
+
