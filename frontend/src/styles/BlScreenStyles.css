@@ -69,7 +69,8 @@
     background: #CBEDFF;
     border-radius: 50%;
 }
-.blPlusBtn2{
+
+.blPlusBtn2 {
     text-align: center;
     color: black;
     padding-top: 10%;
@@ -86,30 +87,166 @@
     font-size: 40px;
 }
 
-.mptDiv{
+.mptDiv {
     display: flex;
     flex-direction: row;
     margin-bottom: 4%;
     margin-right: 3%;
 
 }
-.titleMpt{
+
+.titleMpt {
     margin-bottom: 5%;
-    
+
 }
-.mptDivOne{
+
+.mptDivOne {
     margin-left: 5%;
     margin-right: 3%;
 }
-.mptSubtitle{
+
+.mptSubtitle {
     font-size: 38px;
     margin-bottom: 5%;
     font-weight: bolder;
 }
-.mptParagraph{
+
+.mptParagraph {
     font-size: 26px;
     text-align: justify;
     hyphens: auto;
     font-weight: bold;
 }
 
+.firstImgMptb{
+    width: 45%;
+}
+
+.mptSecondDiv {
+    margin-bottom: 2%;
+}
+
+.mptTitlePDiv {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 3%;
+}
+
+.SecondTitleMpt {
+    margin-bottom: 3%
+}
+
+.mptSecondP {
+    font-size: 22px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.fourMptDiv {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-bottom: 6%;
+}
+
+.firstTwoRiskDiv {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin-left: 5%;
+
+}
+
+.riskPDiv {
+    padding-right: 5%;
+    border-top: 10px solid;
+    border-right: 10px solid;
+    border-image: linear-gradient(to left, #0082C6 60%, transparent 50%) 10% 3;
+    margin-bottom: 10%;
+}
+
+.mptSubtitleH {
+    margin-top: 3%;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: end;
+    margin-bottom: 5%;
+    color: #0082C6;
+}
+
+.mptParagraphH {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: justify;
+    hyphens: auto;
+}
+
+.viewSDiv {
+    padding-right: 5%;
+    border-top: 10px solid;
+    border-right: 10px solid;
+    border-image: linear-gradient(to left, #0ad0d9 60%, transparent 50%) 10% 3;
+    
+}
+
+.mptViewSubtitleH {
+    margin-top: 3%;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: end;
+    margin-bottom: 5%;
+    color: #0ad0d9;
+}
+.SecondTwoRiskDiv{
+    padding-top: 3%;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin-left: 15%;
+}
+
+.bBDiv {
+    padding-right: 5%;
+    margin-bottom: 15%;
+    border-top: 10px solid;
+    border-right: 10px solid;
+    border-image: linear-gradient(to left, #2FB8FF 60%, transparent 50%) 10% 3;
+    
+}
+.mptbBSubtitleH {
+    margin-top: 3%;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: end;
+    margin-bottom: 5%;
+    color: #2FB8FF;
+}
+
+.riskODiv {
+    padding-right: 5%;
+    margin-bottom: 15%;
+    border-top: 10px solid;
+    border-right: 10px solid;
+    border-image: linear-gradient(to left, #00A881 60%, transparent 50%) 10% 3;
+    
+}
+.riskOSubtitleH {
+    margin-top: 3%;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: end;
+    margin-bottom: 5%;
+    color: #00A881;
+}
+.mptbOverview{
+    background-color: #CBEDFF;
+    text-align: center;
+    
+}
+.tittleOverview{
+    margin-bottom: 3%
+}
+.secondImgMptb{
+    width: 90%;
+    margin-bottom: 2%;
+}
