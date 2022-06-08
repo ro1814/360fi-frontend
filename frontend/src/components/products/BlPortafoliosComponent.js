@@ -22,16 +22,22 @@ const BlPortafoliosComponent = () => {
             <h1 className="cardTitle">
               Black-Litterman Model: Going further than MPT
             </h1>
-            <a href="#mpt" className="blPlusBtn" type="button">
+            <div className="blPlusBtn">
+            <a href="#mpt" className="plusAnker">
               <FontAwesomeIcon icon={faPlus} className="plusIcon" />
             </a>
+            </div>
+            
           </div>
 
           <div className="cardBlTwo shadow rounded">
             <h1 className="cardTitle">How our Asset Allocation model works</h1>
-            <a href="#model" className="blPlusBtn2" type="button">
+            <div className="blPlusBtn2">
+            <a href="#model" className="plusAnker">
               <FontAwesomeIcon icon={faPlus} className="plusIcon" />
             </a>
+          </div>
+
           </div>
         </div>
       </div>
