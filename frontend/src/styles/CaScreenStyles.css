@@ -180,3 +180,72 @@
     width: 55%;
 
 }
+.kFlastTitle{
+    margin-bottom: 3%;
+}
+.KfASLogosDiv{
+    display: flex;
+    flex-direction: row;
+    background-color: #CBEDFF;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    padding-left: 3%;
+    margin-bottom: 2%;
+}
+.logosDivOne{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 18%;
+    margin-left: 0;
+}
+.aMIcon{
+    width: auto !important ;
+    font-size: 70px;
+    margin-bottom: 5%;
+    color: #004E77;
+}
+.subtitleKfAS{
+    font-weight: bolder;
+    font-size: 48px;
+}
+.paraKfA{
+    font-weight: bold;
+    font-size: 18px;
+}
+.smallFourDivs{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.smallDiv{
+    background-color: #CBEDFF;
+    margin-right: 1%;
+    padding: 1%;
+    width: 25%;
+}
+.smallDivTitle{
+    font-weight: bold;
+    font-size: 28px;
+}
+.smallDivP{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: start;
+}
+.lastSmallDiv{
+    margin-right: 0;
+}
+.lastUlCa{
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+.lastLiCa{
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 1%;
+}

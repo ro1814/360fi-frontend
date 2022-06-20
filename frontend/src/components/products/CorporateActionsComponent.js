@@ -1,6 +1,12 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlus } from "@fortawesome/free-solid-svg-icons";
+import {
+  faChartPie,
+  faChartBar,
+  faSearch,
+  faPlus,
+} from "@fortawesome/free-solid-svg-icons";
+import { faListAlt } from "@fortawesome/free-regular-svg-icons";
 import { LinkContainer } from "react-router-bootstrap";
 import "../../styles/CaScreenStyles.css";
 
@@ -25,7 +31,7 @@ const CorporateActionsComponent = () => {
               Transforming Corporate Actions Reporting
             </h1>
             <div className="blPlusBtn">
-              <a href="#mpt" className="plusAnker">
+              <a href="#transform" className="plusAnker">
                 <FontAwesomeIcon icon={faPlus} className="plusIcon" />
               </a>
             </div>
@@ -34,7 +40,7 @@ const CorporateActionsComponent = () => {
           <div className="cardCaTwo shadow rounded">
             <h1 className="cardTitleCa cardTitleCaM">How it Works</h1>
             <div className="blPlusBtn2 caPlusBtn2">
-              <a href="#model" className="plusAnker">
+              <a href="#hiw" className="plusAnker">
                 <FontAwesomeIcon icon={faPlus} className="plusIcon" />
               </a>
             </div>
@@ -43,7 +49,7 @@ const CorporateActionsComponent = () => {
           <div className="cardCaThree shadow rounded">
             <h1 className="cardTitleCa">A Powerful End-to-End Solution</h1>
             <div className="blPlusBtn2">
-              <a href="#model" className="plusAnker">
+              <a href="#powerful" className="plusAnker">
                 <FontAwesomeIcon icon={faPlus} className="plusIcon" />
               </a>
             </div>
@@ -51,7 +57,7 @@ const CorporateActionsComponent = () => {
         </div>
       </div>
 
-      <div className="secondCaDiv">
+      <div id="transform" className="secondCaDiv">
         <div>
           <h1 className="title secondDivTitle">
             Transforming Corporate Actions Reporting
@@ -96,7 +102,7 @@ const CorporateActionsComponent = () => {
         </div>
       </div>
 
-      <div className="thirdCaDiv">
+      <div id="hiw" className="thirdCaDiv">
         <h1 className="title titleCaTwo">How it works</h1>
         <div className="thirdSubDiv rounded shadow sDiv">
           <h1 className="subTitleCa">COLLECTION</h1>
@@ -158,8 +164,10 @@ const CorporateActionsComponent = () => {
         </div>
       </div>
 
-      <div className="fourthCaDiv">
-        <h1 className="title titleCaFourthDiv">A Powerful End-to-End Solution</h1>
+      <div id="powerful" className="fourthCaDiv">
+        <h1 className="title titleCaFourthDiv">
+          A Powerful End-to-End Solution
+        </h1>
 
         <div className="fourthSubDiv">
           <ul className="ulThirdDiv">
@@ -179,12 +187,94 @@ const CorporateActionsComponent = () => {
         </div>
 
         <div className="videoDivCa">
-            <video
-              src="/videos/ca-vid.mp4"
-              className="vidCa shadow rounded"
-              controls
-            ></video>
+          <video
+            src="/videos/ca-vid.mp4"
+            className="vidCa shadow rounded"
+            controls
+          ></video>
+        </div>
+      </div>
+
+      <div>
+        <h1 className="title kFlastTitle">Key Features and Scope</h1>
+        <div className="KfASLogosDiv rounded shadow">
+          <div className="logosDivOne">
+            <FontAwesomeIcon icon={faChartBar} className="aMIcon" />
+            <h1 className="subtitleKfAS">400+</h1>
+            <p className="paraKfA">Asset Managers</p>
           </div>
+          <div className="logosDivOne">
+            <FontAwesomeIcon icon={faChartPie} className="aMIcon" />
+            <h1 className="subtitleKfAS">30K+</h1>
+            <p className="paraKfA">UCITS Funds</p>
+          </div>
+          <div className="logosDivOne">
+            <FontAwesomeIcon icon={faListAlt} className="aMIcon" />
+            <h1 className="subtitleKfAS">120k+</h1>
+            <p className="paraKfA">Share Classes</p>
+          </div>
+          <div>
+            <FontAwesomeIcon icon={faSearch} className="aMIcon" />
+            <h1 className="subtitleKfAS">250k+</h1>
+            <p className="paraKfA">Data Points per ISIN</p>
+          </div>
+        </div>
+
+        <div className="smallFourDivs">
+          <div className="smallDiv rounded shadow">
+            <h1 className="smallDivTitle">All-Encompassing Solution</h1>
+            <p className="smallDivP">
+              Access to detailed data and documents for more than 30 types of
+              events, across more than 100 asset managers and transfer agents.
+            </p>
+          </div>
+          <div className="smallDiv rounded shadow">
+            <h1 className="smallDivTitle">User-Friendly Interface</h1>
+            <p className="smallDivP">
+              Intuitive dashboard clearly identifies event creation,
+              announcements, deadlines, and documentation. All CA documents are
+              connected and accessible to download.
+            </p>
+          </div>
+          <div className="smallDiv rounded shadow">
+            <h1 className="smallDivTitle">Tailored Universe</h1>
+            <p className="smallDivP">
+              Customizable to each user, displaying only the relevant corporate
+              actions for your fund scope.
+            </p>
+          </div>
+          <div className="smallDiv lastSmallDiv rounded shadow">
+            <h1 className="smallDivTitle">Real-Time Data Delivery</h1>
+            <p className="smallDivP">
+              Application of strict service deadlines, in which the validation
+              and dissemination of corporate actions does not exceed 24 hours.
+            </p>
+          </div>
+        </div>
+
+        <ul className="lastUlCa">
+          <li className="lastLiCa">
+            30+ categories of CAs collected, classified and distributed
+            digitally.
+          </li>
+          <li className="lastLiCa">
+            CA collected directly from 100+ Asset Managers and Transfer Agents.
+          </li>
+          <li className="lastLiCa">
+            Providing CAs on all levels: Asset Manager, Umbrella, Legal Fund
+            Name, ISIN.
+          </li>
+          <li className="lastLiCa">
+            Flexibility in format delivery, and connectivity to existing
+            software.
+          </li>
+        </ul>
+      </div>
+      <div className="contactEeDiv shadow rounded">
+        <h1 className="title">Book your Demo</h1>
+        <LinkContainer to="/contactus">
+        <button className="btn rounded-pill contactBtnEe" type="">Get Started</button>
+        </LinkContainer>
       </div>
     </>
   );
