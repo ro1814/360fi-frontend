@@ -1,5 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { LinkContainer } from "react-router-bootstrap";
 import {
   faChartLine,
   faMoneyBill,
@@ -168,6 +169,40 @@ const CompetitiveAnalysisComponent = () => {
             </p>
           </div>
         </div>
+      </div>
+
+      <div className="specDiv">
+        <h1 className="title spectTitle">Specifics</h1>
+
+        <div className="KfASLogosDivAce rounded shadow KfASLogosDivCan">
+          <div className="logosDivOneAce">
+            <FontAwesomeIcon icon={faChartBar} className="aMIcon" />
+            <h1 className="subtitleKfAS ">400+</h1>
+            <p className="paraKfAce">Asset Managers</p>
+          </div>
+          <div className="logosDivOneAce logosDivTwoAce">
+            <FontAwesomeIcon icon={faChartPie} className="aMIcon" />
+            <h1 className="subtitleKfAS">30K+</h1>
+            <p className="paraKfAce">UCITS Funds</p>
+          </div>
+          <div className="logosDivOneAce logosDivThreeAce">
+            <FontAwesomeIcon icon={faListAlt} className="aMIcon" />
+            <h1 className="subtitleKfAS">120k+</h1>
+            <p className="paraKfAce">Share Classes</p>
+          </div>
+          <div className="logosDivOne logosDivFour">
+            <FontAwesomeIcon icon={faSearch} className="aMIcon" />
+            <h1 className="subtitleKfAS">250k+</h1>
+            <p className="paraKfAce">Data Points per ISIN</p>
+          </div>
+        </div>
+
+        <div className="contactEeDiv shadow rounded contactCanDiv">
+        <h1 className="title ">Book your Demo</h1>
+        <LinkContainer to="/contactus">
+        <button className="btn rounded-pill contactBtnEe" type="">Get Started</button>
+        </LinkContainer>
+      </div>
       </div>
     </>
   );
