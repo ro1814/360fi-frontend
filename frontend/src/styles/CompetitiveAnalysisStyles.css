@@ -140,7 +140,7 @@ margin-bottom: 8%;
     }
     .cadDivCan{
         margin-top: 5%;
-        margin-left: 10%;
+        margin-left: 6%;
     }
     .cardCanOne {
         padding-top: 1%;
@@ -154,6 +154,7 @@ margin-bottom: 8%;
         width: 90%;
     }
     .secondPCan {
+        hyphens: auto;
         margin-right: 2%;
         margin-left: 2%;
         font-size: 1.2rem;
@@ -161,5 +162,69 @@ margin-bottom: 8%;
         font-weight: bold;
         margin-bottom: 10%;
         margin-top: 10%;
+    }
+    .secondTitleCan{
+        font-size: 1.5rem;
+    }
+    .secondCanDivP {
+        margin-right: 2%;
+        margin-left: 2%;
+        font-weight: bolder;
+        font-size: 1.2rem;
+        text-align: justify;
+        hyphens: auto;
+        margin-bottom: 1;
+    }
+    .canFirstImgDiv {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .canFirstImg {
+        margin-left: 0%;
+        width: 100%;
+    }
+
+    .titleFourCards{
+        font-size: 1.5rem;
+    }
+    .subDivCan{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0%;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .subDivOneCan{
+        width: 100%;
+        padding: 2%;
+        background-color: #CBEDFF;
+    }
+    .subTitleCan{
+        font-size: 1rem;
+        color: #004E77;
+        font-weight: bolder;
+        margin-bottom: 1%;
+    }
+    .subPCan{
+        font-size: 0.8rem;
+        margin-bottom: 0%;
+    }
+    .canSecondImgDiv {
+        width: 100% !important;
+        padding: 0%;
+    }
+    .oppositeDivCan{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .canSecondImgDiv {
+        width: 100% !important;
+        padding-left: 2%;
+        padding: 2%;
+        background-color: #CBEDFF;
+    }
+    .canSecondImg {
+        width: 90%;
+        margin-left: 5%;
     }
 }

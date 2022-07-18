@@ -31,7 +31,7 @@ const CompetitiveAnalysisComponent = () => {
               Learn more about Competitor Analysis
             </h1>
             <div className="acePlusBtn">
-              <a href="#whatisace" className="acePlusAnker">
+              <a href="#learn-more" className="acePlusAnker">
                 <FontAwesomeIcon icon={faPlus} className="plusIcon" />
               </a>
             </div>
@@ -43,7 +43,7 @@ const CompetitiveAnalysisComponent = () => {
           Managers – when selecting providers and building client portfolios.
         </p>
       </div>
-      <div className="secondCanDiv">
+      <div id="learn-more" className="secondCanDiv">
         <h1 className="title secondTitleCan">
           Providing clarity in a complex landscape
         </h1>
@@ -88,8 +88,8 @@ const CompetitiveAnalysisComponent = () => {
           extensive universe.
         </p>
       </div>
-      <div>
-        <h1 className="title">Components</h1>
+      <div >
+        <h1 className="title titleFourCards">Components</h1>
 
         <div className="subDivCan rounded shadow">
           <div className="subDivOneCan ">
@@ -110,7 +110,7 @@ const CompetitiveAnalysisComponent = () => {
           </div>
         </div>
 
-        <div className="subDivCan rounded shadow">
+        <div className="subDivCan rounded shadow oppositeDivCan">
           <div className="canSecondImgDiv">
             <img
               className="canSecondImg"
@@ -118,7 +118,7 @@ const CompetitiveAnalysisComponent = () => {
               alt="can-second"
             ></img>
           </div>
-          <div className="subDivOneCan subTitleCanOp">
+          <div className="subDivOneCan subTitleCanOp ">
             <h1 className="subTitleCan">Average Fees by Target Market</h1>
             <p className="subPCan">
               Having selected the Asset Class, a further breakdown by Target
@@ -148,7 +148,7 @@ const CompetitiveAnalysisComponent = () => {
           </div>
         </div>
 
-        <div className="subDivCan rounded shadow">
+        <div className="subDivCan rounded shadow oppositeDivCan">
           <div className="canSecondImgDiv">
             <img
               className="canSecondImg"
