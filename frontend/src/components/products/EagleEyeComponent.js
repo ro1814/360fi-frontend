@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";import {
   faChartBar,
   faSearch,
 } from "@fortawesome/free-solid-svg-icons";
+import { Player, BigPlayButton } from 'video-react';
 
 import { faListAlt } from "@fortawesome/free-regular-svg-icons";
 import { LinkContainer } from "react-router-bootstrap";

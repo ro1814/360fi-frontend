@@ -6,6 +6,7 @@ import { HomeScreen } from "./screens/HomeScreen";
 
 import Header from "./components/Header";
 
+import ScrollToTop from "./hooks/ScrollToTopHook"
 
 import ProductsAndServicesScreen from "./screens/ProductsAndServicesScreen";
 import InsightsScreen from "./screens/InsightsScreen";
@@ -27,6 +28,7 @@ import CompetitiveAnalysisComponent from "./components/products/CompetitiveAnaly
 function App() {
   return (
     <Router>
+      <ScrollToTop>
       <Header/>
 
       <Route exact path="/" component={HomeScreen} />
@@ -50,6 +52,7 @@ function App() {
  
       
       <Footer />
+      </ScrollToTop>
     </Router>
   );
 }

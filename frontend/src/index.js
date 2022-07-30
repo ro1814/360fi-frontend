@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import './styles/NavbarStyles'
 import 'bootstrap/dist/css/bootstrap.css';
 
+
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>

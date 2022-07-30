@@ -5,9 +5,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import "../styles/NavbarStyles.css";
 
+
 export const HomeScreen = () => {
+  
   return (
     <>
+    
       <div className="homeDiv">
         <div className="divTitle">
           <h1 className="homeTitle">Research Governance Solutions</h1>
