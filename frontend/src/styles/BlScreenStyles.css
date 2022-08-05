@@ -7,7 +7,7 @@
 
 .titleBL {
     padding-top: 3%;
-    margin-top: 0;
+    margin-top: 0 !important;
     margin-right: 30%;
     margin-left: 30%;
     margin-bottom: 5%;
