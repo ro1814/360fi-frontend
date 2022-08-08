@@ -1,8 +1,8 @@
 .firstDivEsg {
     background-image: url(../../public/images/semicircle-green.png);
     background-repeat: no-repeat;
-    position: relative;
-    background-size: cover;
+    position:relative;
+    background-size:cover;
 }
 .titleEsg{
     margin-top: 0;
@@ -14,18 +14,30 @@
     margin-left: 23%;
     font-size: 24px;
     text-align: center;
-    margin-bottom: 3%;
+    padding-bottom: 3%;
+    margin-bottom: 0;
     color: #004E77 !important;
     font-weight: bold;
 }
 .esgPTwo{
     padding-bottom: 7% !important;
 }
+
+.aEsg{
+    color: orange !important;
+}
 .timeline-content-p{
     font-weight: bolder;
     font-size: large;
     text-align: left;
     margin-left: 5%;
+}
+
+.romainList{
+    font-weight: bolder;
+    font-size: large;
+    text-align: left;
+    margin-left: 0;
 }
 
 .timeline-background-green{
@@ -51,7 +63,7 @@
     left: 50%;
     margin-left: -2px;
     border-right: 3px dashed #cbeac0;
-    height: 100%;
+    height: 63%;
     display: block;
 }
 .timeline-dot-green::before{
@@ -189,6 +201,27 @@
 }
 
 @media (max-width: 992px) {
+    .firstDivEsg {
+        padding-bottom: 50%;
+    }
+    .titleEsg{
+        padding-top: 2%;
+        margin-bottom: 2%;
+    }
+    .esgP{
+        margin-right: 5%;
+        margin-left: 5%;
+        font-size:large;
+        text-align: justify;
+        padding-bottom: 3%;
+        margin-bottom: 0;
+        color: #004E77 !important;
+        font-weight: bolder;
+    }
+    .esgPTwo{
+        padding-bottom: 0% !important;
+    }
+    
     .timeline {
         padding: 15px;
     }

@@ -1,4 +1,5 @@
 import React from "react";
+import { LinkContainer } from "react-router-bootstrap";
 import {} from "../../styles/EsgSfrdReportingStyles.css";
 
 const EsgSfrdReportingComponent = () => {
@@ -32,8 +33,8 @@ const EsgSfrdReportingComponent = () => {
                 DISCLOSURE REQUIREMENTS AND INVESTMENT PRODUCT LABELS
               </p>
               <p className="timeline-content-p">
-                UK Sustainability Regime: FCA published discussion paper
-                (DP21/4) on Sustainability Disclosure Requirements and
+                UK Sustainability Regime: FCA published <a href="/sustainability-disclousure-21-4.pdf" target="_blank" rel="noreferrer" className="aEsg"> discussion paper
+                (DP21/4)</a> on Sustainability Disclosure Requirements and
                 investment product labels.
               </p>
             </div>
@@ -89,49 +90,45 @@ const EsgSfrdReportingComponent = () => {
           </div>
 
           <div className="timeline-row">
-            <div className="timeline-time">
-              8:00 AM<small>Dec 18</small>
-            </div>
-            <div className="timeline-content">
-              <i className="icon-code"></i>
-              <h4>Admin Dashboard!</h4>
-              <p>
-                Maxwell Admin Dashboard contains C3 graphs, flot graphs, data
-                tables, calendar.
-              </p>
-              <div className="thumbs"></div>
-              <div className="">
-                <span className="badge badge-pill">Ecommerce</span>
-                <span className="badge badge-pill">CRM</span>
-              </div>
-            </div>
-          </div>
+            <div className="timeline-time">2022</div>
+            <div className="timeline-content timeline-dot-green timeline-background-green">
+              <h1 className="subTitle">EUROPEAN ESG TEMPLATE</h1>
 
-          <div className="timeline-row">
-            <div className="timeline-time">
-              7:45PM<small>Dec 21</small>
-            </div>
-            <div className="timeline-content">
-              <i className="icon-attachment"></i>
-              <h4>Admin Template!</h4>
-              <p>
-                Maxwell Admin Dashboard contains C3 graphs, flot graphs, data
-                tables, calendar, drag &amp; drop and ion slider.
+              <p className="timeline-content-p">
+                The European ESG Template (EET) is a report issued by FinDatEx
+                that serves distributors and intermediaries to comply with their
+                own requirements under SFDR and MiFID II (sustainability
+                preferences of the end client). It also allows manufacturers to
+                meet their reporting requirements under SFDR at product and
+                entity level (PAIs) when they use underlying funds or financial
+                products.
               </p>
-              <div className="thumbs"></div>
-              <div className="">
-                <span className="badge badge-pill">Orders</span>
-                <span className="badge badge-pill">Sales</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="timeline-row">
-            <div className="timeline-content">
-              <p className="m-0">Loading...</p>
+              <p className="timeline-content-p">
+                The report began to be used in June 2022 and will be adapted as
+                the SFDR requirements come into force according to schedule, in
+                a way that more datapoints will be considered as mandatory to be
+                fulfilled.
+              </p>
+              <p className="timeline-content-p">
+                While SDFR Level 2 requirements have been postponed to January
+                2023, the use of a light version of the EET is needed to provide
+                data to consider sustainability preferences as per MiFID II as
+                of August 2022:
+              </p>
+              <ol type="i" className="romainList">
+                <li>Minimum % of Taxonomy alignment</li>
+                <li>Minimum % sustainable investment</li>
+                <li>PAI consideration.</li>
+              </ol>
             </div>
           </div>
         </div>
+      </div>
+      <div className="contactEeDiv shadow rounded">
+        <h1 className="title">Book your Demo</h1>
+        <LinkContainer to="/contactus">
+        <button className="btn rounded-pill contactBtnEe" type="">Get Started</button>
+        </LinkContainer>
       </div>
     </>
   );
