@@ -188,7 +188,7 @@ const MarketIntelligenceComponent = () => {
         <h1 className="title fifthTitle">Scope and Relevant Figures</h1>
         <h1 className="subTitleMiThree">Spanish Universe</h1>
 
-        <div className="KfASLogosDivAce rounded shadow foourthCardB">
+        <div className="KfASLogosDivAce rounded shadow fourthCardB">
           <div className="logosDivOneAce firstCardIconsMi">
             <FontAwesomeIcon icon={faChartBar} className="aMIcon" />
             <h1 className="subtitleKfAS ">200+</h1>
