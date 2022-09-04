@@ -83,7 +83,7 @@ const ValueForMoneyComponent = () => {
         <div className="aceFirstImgDiv">
           <img
             className="aceFirstImg"
-            src="/images/ace-first-image-mac.png"
+            src="/images/ace-first-image.png"
             alt="ace-first"
           ></img>
         </div>

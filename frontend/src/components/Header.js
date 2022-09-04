@@ -60,7 +60,7 @@ const Header = () => {
                           <label className="labelStyle"> Data Feed </label>
                           <p className="productDescription">
                             {" "}
-                            Product description
+                            Governed proprietary database
                           </p>
                         </NavDropdown.Item>
                       </LinkContainer>
@@ -73,10 +73,10 @@ const Header = () => {
                             icon={faChartLine}
                             className="vfmIcon"
                           />{" "}
-                          <label className="labelStyle">Value for Money</label>
+                          <label className="labelStyle">ACE</label>
                           <p className="productDescription">
                             {" "}
-                            Product description
+                            Value for Money Fund Analysis
                           </p>
                         </NavDropdown.Item>
                       </LinkContainer>
@@ -92,7 +92,7 @@ const Header = () => {
                           <label className="labelStyle">BL portfolios</label>
                           <p className="productDescription">
                             {" "}
-                            Product description
+                            Optimised Asset Allocation
                           </p>
                         </NavDropdown.Item>
                       </LinkContainer>
@@ -110,7 +110,7 @@ const Header = () => {
                           </label>
                           <p className="productDescription">
                             {" "}
-                            Product description
+                            Regional Fund Flow Data
                           </p>
                         </NavDropdown.Item>
                       </LinkContainer>
@@ -125,7 +125,7 @@ const Header = () => {
                           <label className="labelStyle">Eagle Eye</label>
                           <p className="productDescription">
                             {" "}
-                            Product description
+                            Guide to best execution
                           </p>
                         </NavDropdown.Item>
                       </LinkContainer>
@@ -143,7 +143,7 @@ const Header = () => {
                           </label>
                           <p className="productDescription">
                             {" "}
-                            Product description
+                            Personalised fund corporate
                           </p>
                         </NavDropdown.Item>
                       </LinkContainer>
@@ -167,7 +167,7 @@ const Header = () => {
                             </label>
                             <p className="productDescription">
                               {" "}
-                              Product description
+                              Robust Fund Sustainability Data
                             </p>
                           </NavDropdown.Item>
                         </LinkContainer>
@@ -183,7 +183,7 @@ const Header = () => {
                             <label className="labelStyle">
                               Competitive Analysis
                             </label>
-                            <p className="productDescription">Product description</p>
+                            <p className="productDescription">Competitiveness of your fund range</p>
                           </NavDropdown.Item>
                         </LinkContainer>
                       </div>

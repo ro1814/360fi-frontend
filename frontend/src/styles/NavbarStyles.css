@@ -66,7 +66,7 @@
     }
 
     .productDescription {
-        font-size: 12px;
+        font-size: medium;
     }
 
     /* Icons in the navBar */
@@ -331,7 +331,7 @@
         font-size:14px;
     }
     .productDescription{
-        font-size: 10px;
+        font-size: xx-small;
     }
 
     .dropdown-item.active,

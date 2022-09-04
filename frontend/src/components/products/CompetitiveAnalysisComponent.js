@@ -57,9 +57,9 @@ const CompetitiveAnalysisComponent = () => {
           looking at the different products that any single Asset Manager
           offers.
         </p>
-        <div className="canFirstImgDiv">
+        <div className="canFirstImgDiv ">
           <img
-            className="canFirstImg"
+            className="canFirstImg shadow rounded"
             src="/images/Competitor_Analysis_Screen.png"
             alt="ace-first"
           ></img>

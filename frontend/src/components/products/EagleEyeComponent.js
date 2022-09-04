@@ -112,7 +112,7 @@ const EagleEyeComponent = () => {
             <video
               src="/videos/ee-vid.mp4"
               className="eeVid shadow rounded"
-              controls
+              controls={true}
             ></video>
           </div>
         </div>

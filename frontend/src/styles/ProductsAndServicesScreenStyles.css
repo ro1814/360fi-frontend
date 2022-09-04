@@ -48,17 +48,18 @@
 .contentBackgroundOne {
     padding-top: 2%;
     padding-bottom: 0.1%;
-    background-color: #f2f3f2;
+    
 }
 
 .contentBackgroundTwo {
     padding-top: 2%;
     padding-bottom: 0.1%;
-    background-color: #CBEDFF;
+    
 }
 
 .contentBkEdited {
-    background-color: white !important;
+    background-color: #f2f3f2;
+
 }
 
 /* Media Queries */
