@@ -14,6 +14,8 @@ export const MeetTitle = styled.div`
 
 export const Title = styled.h1`
   margin: 2%;
+  font-weight: bolder;
+  color: #004E77 ;
 
   @media (max-width: 924px) {
     width: auto;
@@ -21,10 +23,11 @@ export const Title = styled.h1`
 `;
 
 export const Greeting = styled.div`
-  color: #6b6b6e;
   display: flex;
   flex-direction: column;
-  margin: 2% 25%;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 5%;
   position: relative;
   text-align: justify;
   width: auto;
@@ -33,7 +36,6 @@ export const Greeting = styled.div`
     width: 100%;
     margin-left: 0;
     padding: 3%;
-    background-color: #cbedff;
   }
 `;
 
@@ -44,8 +46,8 @@ export const Paragraph = styled.p`
   @media (max-width: 924px) {
     width: auto;
     margin-right: 0px;
-    font-size: 0.75rem;
     line-height: 1rem;
+    font-size: large;
   }
 `;
 
