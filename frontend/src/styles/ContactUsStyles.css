@@ -1,0 +1,12 @@
+.firstMeetUsDiv{
+    background-image: url(../../public/images/contact-us-background.png);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: 50%;
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: row;
+}
+.logoMU{
+
+}

@@ -1,10 +1,32 @@
-import React from 'react'
+import React from "react";
+import {} from "../styles/ContactUsStyles.css";
 
 const ContactUsScreen = () => {
-    return (
-        <div>
-            <h1>Hi, ContactUsScreen here</h1>
+  return (
+    <>
+      <div className="firstMeetUsDiv">
+
+        <div className="firstSubDivMu">
+            
+              <img src="/logo-header360.svg" alt="360-logo" className="logoMU" />
+
+            <div className="secondSubDivMu">
+                <div className="ukImageDiv">
+                </div>
+                <div className="spImageDiv">
+                    
+                </div>
+            </div>
         </div>
-    )
-}
- export default ContactUsScreen
+
+        <div className="formDivMu">
+            <h1>Contact Us</h1>
+            <form>
+
+            </form>
+        </div>
+      </div>
+    </>
+  );
+};
+export default ContactUsScreen;
