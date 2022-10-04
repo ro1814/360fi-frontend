@@ -1,12 +1,35 @@
 .firstMeetUsDiv{
     background-image: url(../../public/images/contact-us-background.png);
     background-repeat: no-repeat;
-    position: relative;
     background-size: 50%;
     margin-bottom: 3%;
     display: flex;
     flex-direction: row;
+    padding-left: 3%;
+}
+.firstSubDivMu{
+    width: 50%;
+}
+.logoMUDiv{
+    margin-left: 3%;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 3%;
 }
 .logoMU{
+    display: block;
+    width: 70%;
+}
+.secondSubDivMu{
+    display: flex;
+    flex-direction: row;
+}
+.ukImageDiv{
+    align-items: center;
+}
+.ukMap{
+    align-self: center;
+}
+.spImageDiv{
 
 }
