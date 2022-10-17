@@ -5,7 +5,7 @@ import {} from "../styles/ContactUsStyles.css";
 const ContactUsScreen = () => {
   return (
     <>
-      <div className="firstMeetUsDiv">
+      <div className="firstContactUsDiv">
         <div className="firstSubDivMu">
           <div className="logoMUDiv">
             <img src="/logo-header360.svg" alt="360-logo" className="logoMU" />
@@ -84,7 +84,7 @@ const ContactUsScreen = () => {
               <Col md={{ span: 10, offset: 2 }}>
                 <Form.Check label="Subscribe to relevant updates and news" />
               </Col>
-              <Col md={{ span: 10, offset: 5 }}>
+              <Col md={{ span: 10, offset: 5 }} className="btmFormDiv">
                 <Button type="submit" className="mb-2 mt-3" size="lg">
                   Submit
                 </Button>
