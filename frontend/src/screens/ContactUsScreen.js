@@ -1,8 +1,43 @@
-import React from "react";
-import { Form, Button, FloatingLabel, Col } from "react-bootstrap";
+import React, { useRef, useState } from "react";
+import emailjs from "emailjs-com";
+import { Form, Button, FloatingLabel, Col, Modal } from "react-bootstrap";
 import {} from "../styles/ContactUsStyles.css";
 
 const ContactUsScreen = () => {
+  const [validated, setValidated] = useState(false);
+  const form = useRef();
+
+  const sendEmail = (e) => {
+
+    let templateId = "template_5ckua9q";
+    let serviceId = "service_aqdilkq";
+    let publicKey = "fni11N9izFn7BkFR8";
+    
+    e.preventDefault();
+    emailjs.sendForm(serviceId, templateId, "#contact-form", publicKey).then(
+      () => {
+        setValidated(false);
+      },
+      (error) => {
+        alert("There was a problem sending your message.", error);
+      }
+    );
+  };
+
+  const handleSubmit = (event) => {
+    const form = event.currentTarget;
+    if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+    } else {
+      sendEmail(event);
+      event.currentTarget.reset();
+      
+      //alert("Message was sent!");
+    }
+    setValidated(true);
+  };
+
   return (
     <>
       <div className="firstContactUsDiv">
@@ -38,16 +73,30 @@ const ContactUsScreen = () => {
 
         <div className="formDivMu">
           <h1 className="formTitle">Contact Us</h1>
-          <Form>
+          <Form
+            noValidate
+            ref={form}
+            onSubmit={handleSubmit}
+            validated={validated}
+            id="contact-form"
+          >
             <Form.Group className="mb-3" controlId="contactUsForm">
               <FloatingLabel
                 controlId="floatingTextarea"
                 label="Name"
                 className="mb-3 border-dark"
               >
-                <Form.Control type="name" placeholder="Name" 
-                className="border-dark"
+                <Form.Control
+                  type="text"
+                  placeholder="Name"
+                  name="user_name"
+                  required
+                  className="border-dark"
                 />
+                <Form.Control.Feedback type="invalid">
+                  Please enter your name.
+                </Form.Control.Feedback>
+                <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
               </FloatingLabel>
 
               <FloatingLabel
@@ -55,7 +104,17 @@ const ContactUsScreen = () => {
                 label="Company"
                 className="mb-3"
               >
-                <Form.Control type="text" placeholder="Company" className="border-dark"/>
+                <Form.Control
+                  type="text"
+                  placeholder="Company"
+                  name="user_company"
+                  required
+                  className="border-dark"
+                />
+                <Form.Control.Feedback type="invalid">
+                  Please enter a valid company name.
+                </Form.Control.Feedback>
+                <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
               </FloatingLabel>
 
               <FloatingLabel
@@ -63,7 +122,17 @@ const ContactUsScreen = () => {
                 label="E-mail"
                 className="mb-3"
               >
-                <Form.Control type="email" placeholder="Email" className="border-dark"/>
+                <Form.Control
+                  type="email"
+                  placeholder="Email"
+                  name="user_email"
+                  required
+                  className="border-dark"
+                />
+                <Form.Control.Feedback type="invalid">
+                  Please enter a valid email.
+                </Form.Control.Feedback>
+                <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
               </FloatingLabel>
 
               <FloatingLabel
@@ -74,18 +143,35 @@ const ContactUsScreen = () => {
                 <Form.Control
                   as="textarea"
                   placeholder="Leave a comment here"
+                  name="user_message"
                   style={{ height: "90px" }}
                   className="border-dark"
                 />
+                <Form.Control.Feedback type="invalid">
+                  Please enter a message.
+                </Form.Control.Feedback>
+                <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
               </FloatingLabel>
               <Col md={{ span: 10, offset: 2 }}>
-                <Form.Check label="Accept Privacy Policy and Conditions" />
+                <Form.Check
+                  label="Accept Privacy Policy and Conditions"
+                  required
+                />
+                <Form.Control.Feedback type="invalid">
+                  Please enter a message.
+                </Form.Control.Feedback>
               </Col>
               <Col md={{ span: 10, offset: 2 }}>
                 <Form.Check label="Subscribe to relevant updates and news" />
+                <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
               </Col>
               <Col md={{ span: 10, offset: 5 }} className="btmFormDiv">
-                <Button type="submit" className="mb-2 mt-3" size="lg">
+                <Button
+                  type="submit"
+                  value="send"
+                  className="mb-2 mt-3"
+                  size="lg"
+                >
                   Submit
                 </Button>
               </Col>
