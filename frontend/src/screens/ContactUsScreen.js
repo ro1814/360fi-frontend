@@ -8,12 +8,12 @@ const ContactUsScreen = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
+    e.preventDefault();
 
     let templateId = "template_5ckua9q";
     let serviceId = "service_aqdilkq";
     let publicKey = "fni11N9izFn7BkFR8";
-    
-    e.preventDefault();
+
     emailjs.sendForm(serviceId, templateId, "#contact-form", publicKey).then(
       () => {
         setValidated(false);
@@ -24,18 +24,21 @@ const ContactUsScreen = () => {
     );
   };
 
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+
   const handleSubmit = (event) => {
+    setValidated(true);
     const form = event.currentTarget;
     if (form.checkValidity() === false) {
       event.preventDefault();
       event.stopPropagation();
     } else {
       sendEmail(event);
+      setValidated(false);
       event.currentTarget.reset();
-      
-      //alert("Message was sent!");
+      setShow(true);
     }
-    setValidated(true);
   };
 
   return (
@@ -169,11 +172,28 @@ const ContactUsScreen = () => {
                 <Button
                   type="submit"
                   value="send"
-                  className="mb-2 mt-3"
+                  className="mb-2 mt-3 modalButton"
                   size="lg"
                 >
                   Submit
                 </Button>
+                <Modal show={show} onHide={handleClose}>
+                  <Modal.Header
+                    closeButton
+                    className="modalTextCentered"
+                  ></Modal.Header>
+                  <Modal.Body className="modalTextCentered">
+                    Your message has been succesfully sent.
+                  </Modal.Body>
+                  <Modal.Footer className="modalTextCentered">
+                    <Button
+                      className="modalButton rounded-pill"
+                      onClick={handleClose}
+                    >
+                      Accept
+                    </Button>
+                  </Modal.Footer>
+                </Modal>
               </Col>
             </Form.Group>
           </Form>

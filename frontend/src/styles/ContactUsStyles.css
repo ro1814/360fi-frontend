@@ -87,6 +87,16 @@
     text-align: center;
     margin-bottom: 10%;
 }
+.modalTextCentered{
+    text-align: center;
+    font-weight: bolder;
+    font-size: larger;
+    background-color: white;
+}
+.modalButton{
+    background-color: #004E77 !important;
+    font-weight: bolder !important;
+}
 
 /* Media Queries */
 
