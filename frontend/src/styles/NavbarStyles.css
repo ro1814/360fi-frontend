@@ -18,6 +18,9 @@
 .arrowRightStyle {
     color: #63C9FF;
 }
+.dropdown-toggle::after {
+    content: none !important;
+}
 
 
 @media (min-width: 925px) {
@@ -30,7 +33,6 @@
     .dropdown-menu.show {
         display: flex !important;
         flex-direction: row !important;
-        
     }
 
     .dropdown-item {
@@ -309,7 +311,7 @@
     }
 
     .seeAll {
-        
+
         padding: 0.35em 0.65em;
         display: block !important;
         border-radius: 50rem !important;
@@ -327,10 +329,12 @@
         text-decoration: underline !important;
         width: 100%;
     }
-    .labelStyle{
-        font-size:14px;
+
+    .labelStyle {
+        font-size: 14px;
     }
-    .productDescription{
+
+    .productDescription {
         font-size: xx-small;
     }
 

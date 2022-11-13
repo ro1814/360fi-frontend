@@ -78,3 +78,27 @@
 .loginImages{
     width: 80%;
 }
+.modalLogoDiv{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+.fundFiLogo{
+width: 40%;
+}
+.modalH4{
+    text-align: center;
+    font-weight: bolder;
+    color: #004E77;
+    font-size: large;
+}
+.modalP{
+    font-size: large;
+    font-weight: bolder;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.divModalSelect{
+    display: flex;
+    flex-direction: row;
+}

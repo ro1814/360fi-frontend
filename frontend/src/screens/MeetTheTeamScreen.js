@@ -99,7 +99,7 @@ const MeetTheTeamScreen = () => {
         <Container>
           <div className="row text-center">
             <div className="col-xl-3 col-sm-6 mb-5">
-              <div className="bg-white rounded shadow-sm py-5 px-4 ">
+              <div className="bg-transparent rounded shadow-sm py-5 px-4 ">
                 <BioImagen
                   src="/images/meetusimages/EnriquePardo.png"
                   alt="Enrique Pardo CEO"
@@ -122,7 +122,7 @@ const MeetTheTeamScreen = () => {
             </div>
 
             <div className="col-xl-3 col-sm-6 mb-5 ">
-              <div className="bg-white rounded shadow-sm py-5 px-4 ">
+              <div className="bg-transparent rounded shadow-sm py-5 px-4 ">
                 <BioImagen
                   src="/images/meetusimages/PedroMarazuela.png"
                   alt="Pedro Marazuela COO"
@@ -135,7 +135,7 @@ const MeetTheTeamScreen = () => {
             </div>
 
             <div className="col-xl-3 col-sm-6 mb-5">
-              <div className="bg-white rounded shadow-sm py-5 px-4">
+              <div className="bg-transparent rounded shadow-sm py-5 px-4">
                 <BioImagen
                   src="/images/meetusimages/KatyGavelas.png"
                   alt="Katy Gavelas CCO"
@@ -148,7 +148,7 @@ const MeetTheTeamScreen = () => {
             </div>
 
             <div className="col-xl-3 col-sm-6 mb-5">
-              <div className="bg-white rounded shadow-sm py-5 px-4">
+              <div className="bg-transparent rounded shadow-sm py-5 px-4">
                 <BioImagen
                   src="/images/meetusimages/PhilLindsay.png"
                   alt="Phil Lindsay (Chairman)"
@@ -163,7 +163,7 @@ const MeetTheTeamScreen = () => {
             </div>
 
             <div className="col-xl-3 col-sm-6 mb-5">
-              <div className="bg-white rounded shadow-sm py-5 px-4">
+              <div className="bg-transparent rounded shadow-sm py-5 px-4">
                 <BioImagen
                   src="/images/meetusimages/ChetanModi.png"
                   alt="Chetan Modi (CCO-Chief Commercial Officer) "
@@ -176,7 +176,7 @@ const MeetTheTeamScreen = () => {
             </div>
 
             <div className="col-xl-3 col-sm-6 mb-5">
-              <div className="bg-white rounded shadow-sm py-5 px-4">
+              <div className="bg-transparent rounded shadow-sm py-5 px-4">
                 <BioImagen
                   src="/images/meetusimages/LuisBenitez.png"
                   alt="Luis Benitez (CIO-Chief Information Officer) "
@@ -189,7 +189,7 @@ const MeetTheTeamScreen = () => {
             </div>
 
             <div className="col-xl-3 col-sm-6 mb-5">
-              <div className="bg-white rounded shadow-sm py-5 px-4">
+              <div className="bg-transparent rounded shadow-sm py-5 px-4">
                 <BioImagen
                   src="/images/meetusimages/OlgaRosario.png"
                   alt="Olga Rosario (HOF-Head of Finance and Human Resources) "
@@ -204,7 +204,7 @@ const MeetTheTeamScreen = () => {
             </div>
 
             <div className="col-xl-3 col-sm-6 mb-5">
-              <div className="bg-white rounded shadow-sm py-5 px-4">
+              <div className="bg-transparent rounded shadow-sm py-5 px-4">
                 <BioImagen
                   src="/images/meetusimages/FernandoZapata.png"
                   alt="Fernando Zapata (Head of Marketing and Communication)"
@@ -219,7 +219,7 @@ const MeetTheTeamScreen = () => {
             </div>
 
             <div className="col-xl-3 col-sm-6 mb-5">
-              <div className="bg-white rounded shadow-sm py-5 px-4">
+              <div className="bg-transparent rounded shadow-sm py-5 px-4">
                 <BioImagen
                   src="/images/meetusimages/PabloBadenes.png"
                   alt="Pablo Badenes
@@ -235,7 +235,7 @@ const MeetTheTeamScreen = () => {
             </div>
 
             <div className="col-xl-3 col-sm-6 mb-5">
-              <div className="bg-white rounded shadow-sm py-5 px-4">
+              <div className="bg-transparent rounded shadow-sm py-5 px-4">
                 <BioImagen
                   src="/images/meetusimages/DanielAyquipa.png"
                   alt="Daniel Ayquipa (Investment Research - Portfolios)"
@@ -250,7 +250,7 @@ const MeetTheTeamScreen = () => {
             </div>
 
             <div className="col-xl-3 col-sm-6 mb-5">
-              <div className="bg-white rounded shadow-sm py-5 px-4">
+              <div className="bg-transparent rounded shadow-sm py-5 px-4">
                 <BioImagen
                   src="/images/meetusimages/BenjaminSanz.jpg"
                   alt="Daniel Ayquipa (Investment Research - Portfolios)"
@@ -265,7 +265,7 @@ const MeetTheTeamScreen = () => {
             </div>
 
             <div className="col-xl-3 col-sm-6 mb-5">
-              <div className="bg-white rounded shadow-sm py-5 px-4">
+              <div className="bg-transparent rounded shadow-sm py-5 px-4">
                 <BioImagen
                   src="/images/meetusimages/AsierAranda.jpg"
                   alt="Daniel Ayquipa (Investment Research - Portfolios)"
@@ -280,7 +280,7 @@ const MeetTheTeamScreen = () => {
             </div>
 
             <div className="col-xl-3 col-sm-6 mb-5">
-              <div className="bg-white rounded shadow-sm py-5 px-4">
+              <div className="bg-transparent rounded shadow-sm py-5 px-4">
                 <BioImagen
                   src="/images/meetusimages/JaraGracia.JPEG"
                   alt="Daniel Ayquipa (Investment Research - Portfolios)"
@@ -295,7 +295,7 @@ const MeetTheTeamScreen = () => {
             </div>
 
             <div className="col-xl-3 col-sm-6 mb-5">
-              <div className="bg-white rounded shadow-sm py-5 px-4">
+              <div className="bg-transparent rounded shadow-sm py-5 px-4">
                 <BioImagen
                   src="/images/meetusimages/JuanCamiloHernandez.jpg"
                   alt="Daniel Ayquipa (Investment Research - Portfolios)"
