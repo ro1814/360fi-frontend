@@ -6,7 +6,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './styles/NavbarStyles'
 import 'bootstrap/dist/css/bootstrap.css';
-
+import 'react-bootstrap-country-select/dist/react-bootstrap-country-select.css';
 
 ReactDOM.render(
   <React.StrictMode>
