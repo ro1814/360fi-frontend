@@ -2,18 +2,44 @@ import React, { useState, useRef } from "react";
 import {} from "../styles/LoginRegisterScreenStyles.css";
 import { Button, Form, Modal } from "react-bootstrap";
 import ReactFlagsSelect from "react-flags-select";
+import { LinkContainer } from "react-router-bootstrap";
 
 function MyVerticallyCenteredModal(props) {
   const [select, setSelect] = useState("ES");
   const onSelect = (code) => setSelect(code);
+  const [validated, setValidated] = useState(false);
+  const form = useRef();
+
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(true);
+
+  const handleSubmit = (event) => {
+    
+    setValidated(true);
+    const form = event.currentTarget;
+    if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+    } else {
+      setValidated(false);
+      event.currentTarget.reset();
+      event.preventDefault();
+      handleClose(true);
+    }
+  };
+
   return (
     <Modal
       {...props}
       size="lg"
       aria-labelledby="contained-modal-title-vcenter"
       centered
+      backdrop="static"
+      keyboard={false}
+      show={!show}
+      onHide={handleClose}
     >
-      <Modal.Body>
+      <Modal.Body className="modalBody">
         <div className="modalLogoDiv">
           <img
             src="/images/logos/logo-360-1.png"
@@ -27,73 +53,93 @@ function MyVerticallyCenteredModal(props) {
           access to our tools and services, please identify your investor
           profile and country of domicile.
         </p>
-        <div className="countryInvestorDiv">
-          <div className="countrySelectorDiv">
-            <ReactFlagsSelect
-              className="countrySelector"
-              selected={select}
-              onSelect={onSelect}
-              countries={[
-                "ES",
-                "GB",
-                "AT",
-                "BE",
-                "BG",
-                "HR",
-                "CY",
-                "CZ",
-                "DK",
-                "EE",
-                "FI",
-                "FR",
-                "DE",
-                "EL",
-                "HU",
-                "IS",
-                "IE",
-                "IT",
-                "LV",
-                "LI",
-                "LT",
-                "LU",
-                "MT",
-                "NL",
-                "NO",
-                "PL",
-                "PT",
-                "RO",
-                "SI",
-                "SK",
-                "SE",
-                "CH",
-              ]}
-            />
+        <Form
+          noValidate
+          ref={form}
+          validated={validated}
+          onSubmit={handleSubmit}
+        >
+          <div className="divModalSelect">
+            <div className="countrySelectorDiv">
+              <ReactFlagsSelect
+                className="countrySelector"
+                selected={select}
+                onSelect={onSelect}
+                countries={[
+                  "ES",
+                  "GB",
+                  "AT",
+                  "BE",
+                  "BG",
+                  "HR",
+                  "CY",
+                  "CZ",
+                  "DK",
+                  "EE",
+                  "FI",
+                  "FR",
+                  "DE",
+                  "EL",
+                  "HU",
+                  "IS",
+                  "IE",
+                  "IT",
+                  "LV",
+                  "LI",
+                  "LT",
+                  "LU",
+                  "MT",
+                  "NL",
+                  "NO",
+                  "PL",
+                  "PT",
+                  "RO",
+                  "SI",
+                  "SK",
+                  "SE",
+                  "CH",
+                ]}
+              />
+            </div>
+            <div className="profInvestorDiv">
+              <Form.Check
+                label="I am a Professional Investor"
+                required
+              ></Form.Check>
+              <Form.Control.Feedback type="invalid">
+                Please select that you are a valid Professional Investor for
+                continuining.
+              </Form.Control.Feedback>
+              <Form.Control.Feedback type="valid">
+                Looks good!
+              </Form.Control.Feedback>
+            </div>
           </div>
-          <div className="profInvestorDiv">
+          <div className="modalConditions">
             <Form.Check
-              type="radio"
-              label="I am a Professional Investor"
-            ></Form.Check>
-          </div>
-        </div>
-        <div className="modalConditions">
-          <Form.Check
-            label="I hereby confirm that I have read and accepted the disclaimer and
+              label="I hereby confirm that I have read and accepted the disclaimer and
             terms and conditions of use as well the privacy policy of
             360fundinsight.com."
-          ></Form.Check>
-        </div>
-        <div>
-          <Button>Proceed</Button>
-          <Button>Cancel</Button>
-        </div>
+              required
+            ></Form.Check>
+          </div>
+          <div className="modalBtns">
+            <Button type="submit" className="fTbutton pill" size="lg">
+              Proceed
+            </Button>
+            <LinkContainer to="/">
+            <Button className="loginButton pill" size="lg">Cancel</Button>
+            </LinkContainer>
+          </div>
+        </Form>
       </Modal.Body>
     </Modal>
   );
 }
 
 const LoginRegisterScreen = () => {
-  const [modalShow, setModalShow] = React.useState(true);
+  const [show, setShow] = useState(true);
+  const handleClose = () => setShow(false);
   return (
     <div className="lRDiv">
       <div className="leftLrDiv">
@@ -127,8 +173,8 @@ const LoginRegisterScreen = () => {
         />
       </div>
       <MyVerticallyCenteredModal
-        show={modalShow}
-        onHide={() => setModalShow(false)}
+        show={show}
+        onHide={handleClose}
       />
     </div>
   );

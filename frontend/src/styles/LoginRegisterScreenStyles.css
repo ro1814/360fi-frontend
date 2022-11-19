@@ -108,12 +108,12 @@ width: 40%;
 }
 .countrySelectorDiv{
     margin-left: 5%;
-    width: 35%;
+    width: 45%;
 }
 .profInvestorDiv{
     align-self: center;
     width: 35%;
-    margin-left: 22%;
+    margin-left: 12%;
 }
 .modalConditions{
     align-self: center;
@@ -122,4 +122,72 @@ width: 40%;
     margin-right: 1%;
     margin-top: 3%;
     display: flex;
+}
+
+.modalBtns{
+    text-align: center;
+}
+
+/* Media Queries */
+
+/* Mobile queries ( max 924 px) */
+@media (max-width: 924px) {
+    .lRDiv {
+        background-image: url(../../public/images/login-background.png);
+        background-color: #CBEDFF;
+        background-repeat: no-repeat;
+        background-size: 110% 105%;
+        margin-top: 0;
+        margin-bottom: 0%;
+        display: flex;
+        flex-direction: row;
+        flex-direction: row;
+        padding-bottom: 8.5%;
+    }
+    .leftLrDiv {
+        width: 100%;
+    }
+    .rightLrDiv{
+        display: none;
+    }
+    .modalBody{
+        background-color: white;
+    }
+    .fundFiLogo{
+        margin-top: 2%;
+        margin-bottom: 2%;
+        width: 50%;
+    }
+    .modalH4{
+        font-size: x-large;
+    }
+    .modalP{
+        margin-left: 3%;
+        margin-right: 3%;
+        text-align: justify;
+    }
+    .divModalSelect{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .countrySelector{
+        margin-left: 5%;
+        width: 190%;
+    }
+    .profInvestorDiv{
+        margin-bottom: 5%;
+        width: 80%;
+        margin-left: 0%;
+    }
+    .modalConditions{
+        align-self: center;
+        margin-bottom: 3%;
+        margin-left: 10%;
+        margin-right: 4%;
+        margin-top: 3%;
+        display: flex;
+    }
+    .modalBtns{
+        margin-bottom: 3%;
+    }
 }
