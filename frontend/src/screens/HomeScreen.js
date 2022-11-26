@@ -4,13 +4,9 @@ import { LinkContainer } from "react-router-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import "../styles/NavbarStyles.css";
-
-
 export const HomeScreen = () => {
-  
   return (
     <>
-    
       <div className="homeDiv">
         <div className="divTitle">
           <h1 className="homeTitle">Research Governance Solutions</h1>
@@ -116,7 +112,9 @@ export const HomeScreen = () => {
             </LinkContainer>
 
             <LinkContainer to="/product/black-litterman">
-              <label className="labelStylewDwHLinksLast ">Black-Litterman</label>
+              <label className="labelStylewDwHLinksLast ">
+                Black-Litterman
+              </label>
             </LinkContainer>
           </div>
         </div>
@@ -210,19 +208,19 @@ export const HomeScreen = () => {
           <p className="promStyles">
             Book a call to find out how we can help transform your business
           </p>
-          
+
           <div className="contactUsDivHS">
-          <div className="getInTouchButton m-3 p-2 rounded-pill">
-                        <LinkContainer to="/contactus">
-                            <p className="labelStyleSeeAllProducts">
-                            Get in touch {""}
-                              <FontAwesomeIcon
-                                icon={faArrowRight}
-                                className="arrowRightStyle"
-                              />
-                            </p>
-                        </LinkContainer>
-                      </div>
+            <div className="getInTouchButton m-3 p-2 rounded-pill">
+              <LinkContainer to="/contactus">
+                <p className="labelStyleSeeAllProducts">
+                  Get in touch {""}
+                  <FontAwesomeIcon
+                    icon={faArrowRight}
+                    className="arrowRightStyle"
+                  />
+                </p>
+              </LinkContainer>
+            </div>
           </div>
         </div>
         <div className="oCsSubDivTwo shadow p-3 rounded">
@@ -230,21 +228,19 @@ export const HomeScreen = () => {
           <p className="promStyles">
             Discover our products and how it can help transform your business
           </p>
-            
-          <div className="seeAllProducts m-3 p-2 rounded-pill">
-                        <LinkContainer to="/products" className="toPoint">
-                            <p className="labelStyleSeeAllProducts">
-                              Products Overview {""}
-                              <FontAwesomeIcon
-                                icon={faArrowRight}
-                                className="arrowRightStyle"
-                              />
-                            </p>
-                        </LinkContainer>
-                      </div>
 
+          <div className="seeAllProducts m-3 p-2 rounded-pill">
+            <LinkContainer to="/products" className="toPoint">
+              <p className="labelStyleSeeAllProducts">
+                Products Overview {""}
+                <FontAwesomeIcon
+                  icon={faArrowRight}
+                  className="arrowRightStyle"
+                />
+              </p>
+            </LinkContainer>
+          </div>
         </div>
-        
       </div>
     </>
   );

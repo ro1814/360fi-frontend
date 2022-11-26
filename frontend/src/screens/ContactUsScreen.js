@@ -10,9 +10,9 @@ const ContactUsScreen = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    let templateId = "template_5ckua9q";
-    let serviceId = "service_aqdilkq";
-    let publicKey = "fni11N9izFn7BkFR8";
+    let serviceId = "service_4c2tamr";
+    let templateId = "template_0s413cl";
+    let publicKey = "tazv-rJXaj_0JWcjk";
 
     emailjs.sendForm(serviceId, templateId, "#contact-form", publicKey).then(
       () => {

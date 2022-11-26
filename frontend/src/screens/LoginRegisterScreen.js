@@ -13,8 +13,11 @@ function MyVerticallyCenteredModal(props) {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(true);
 
+  const disclainerPDF = "/Disclaimer.pdf";
+  const tAcPdf ="/Terms_&_Conditions.pdf"
+  const pApPdf ="/Privacy_Policy.pdf"
+
   const handleSubmit = (event) => {
-    
     setValidated(true);
     const form = event.currentTarget;
     if (form.checkValidity() === false) {
@@ -117,9 +120,12 @@ function MyVerticallyCenteredModal(props) {
           </div>
           <div className="modalConditions">
             <Form.Check
-              label="I hereby confirm that I have read and accepted the disclaimer and
-            terms and conditions of use as well the privacy policy of
-            360fundinsight.com."
+              label={
+                <span>
+                  I hereby confirm that I have read and accepted the <a href={disclainerPDF} target="_blank" rel="noreferrer" className="linkToDocs">disclaimer</a> and <a href={tAcPdf} target="_blank" rel="noreferrer" className="linkToDocs">terms and conditions</a>  of use as well the <a href={pApPdf} target="_blank" rel="noreferrer" className="linkToDocs">privacy policy of
+                  360fundinsight.com.</a> 
+                </span>
+              }
               required
             ></Form.Check>
           </div>
@@ -128,7 +134,9 @@ function MyVerticallyCenteredModal(props) {
               Proceed
             </Button>
             <LinkContainer to="/">
-            <Button className="loginButton pill" size="lg">Cancel</Button>
+              <Button className="loginButton pill" size="lg">
+                Cancel
+              </Button>
             </LinkContainer>
           </div>
         </Form>
@@ -140,6 +148,7 @@ function MyVerticallyCenteredModal(props) {
 const LoginRegisterScreen = () => {
   const [show, setShow] = useState(true);
   const handleClose = () => setShow(false);
+  const fundsfairwayLink = "https://fundsfairway.com";
   return (
     <div className="lRDiv">
       <div className="leftLrDiv">
@@ -157,10 +166,20 @@ const LoginRegisterScreen = () => {
           </p>
         </div>
         <div className="lRbuttonsDiv">
-          <Button size="lg" className="fTbutton pill">
+          <Button
+            size="lg"
+            className="fTbutton pill"
+            href={fundsfairwayLink}
+            rel="noreferrer"
+          >
             Free Trial
           </Button>
-          <Button size="lg" className="loginButton pill">
+          <Button
+            size="lg"
+            className="loginButton pill"
+            href={fundsfairwayLink}
+            rel="noreferrer"
+          >
             Login
           </Button>
         </div>
@@ -172,10 +191,7 @@ const LoginRegisterScreen = () => {
           className="loginImages"
         />
       </div>
-      <MyVerticallyCenteredModal
-        show={show}
-        onHide={handleClose}
-      />
+      <MyVerticallyCenteredModal show={show} onHide={handleClose} />
     </div>
   );
 };

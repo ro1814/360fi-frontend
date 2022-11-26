@@ -128,6 +128,19 @@ width: 40%;
     text-align: center;
 }
 
+.linkToDocs{
+    color: black
+}
+
+.linkToDocs:hover{
+    color: #004E77;
+}
+.linkToDocsCookies{
+    color: white;
+}
+.linkToDocsCookies:hover{
+    color: #cbeac0;
+}
 /* Media Queries */
 
 /* Mobile queries ( max 924 px) */
