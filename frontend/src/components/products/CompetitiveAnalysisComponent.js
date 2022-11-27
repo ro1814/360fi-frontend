@@ -2,9 +2,6 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { LinkContainer } from "react-router-bootstrap";
 import {
-  faChartLine,
-  faMoneyBill,
-  faLeaf,
   faChartBar,
   faSearch,
   faPlus,

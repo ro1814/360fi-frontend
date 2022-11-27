@@ -25,7 +25,7 @@ const InsightsScreen = () => {
           <div className="insightCardNew rounded shadow insightCardNewBottom">
             <img className="newsImg" src="/images/fair-values-img.jpeg" alt="chart"></img>
 
-            <a className="newsTitle" href={firstNewsLink} target="_blank">
+            <a className="newsTitle" href={firstNewsLink} target="_blank" rel="noreferrer">
               Finding Fair Value in European Small Caps Funds – ACE Score
               Analysis
             </a>
@@ -34,13 +34,13 @@ const InsightsScreen = () => {
             <img className="newsImg" src="/images/cactionsupdate-img.jpeg" alt="chart"></img>
             <br />
             <br />
-            <a className="newsTitle" href={secondNewsLink} target="_blank">
+            <a className="newsTitle" href={secondNewsLink} target="_blank" rel="noreferrer">
               Corporate Actions Update.
             </a>
           </div>
           <div className="insightCardNew rounded shadow">
             <img className="newsImg" src="/images/fundcorporate-img.jpeg" alt="chart"></img>
-            <a className="newsTitle" href={thirdNewsLink} target="_blank">
+            <a className="newsTitle" href={thirdNewsLink} target="_blank" rel="noreferrer">
               Fund Corporate Actions – How do you keep up with all the changes
               and communication?
             </a>
